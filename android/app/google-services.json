@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "257180841290",
+    "project_id": "treehacks-3f859",
+    "storage_bucket": "treehacks-3f859.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:257180841290:android:61be5865a8a60ef4a83db3",
+        "android_client_info": {
+          "package_name": "Tap2Call.com"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "257180841290-c8fdcsqlu2hgo7m63c2mj7h2b9les1ds.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "Tap2Call.com",
+            "certificate_hash": "9bbb3186b2189ef16d8f272bdab59362c395cbb4"
+          }
+        },
+        {
+          "client_id": "257180841290-gp71a6ov4pmti4ga5v8oujqntl4dl2t7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCsTuWixHI2NOSQcFcw-5W3eZw52yoG1Pg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "257180841290-gp71a6ov4pmti4ga5v8oujqntl4dl2t7.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "257180841290-o47k49dj90ncjk624temcnponj95iue6.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "Tap2Call.com"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
