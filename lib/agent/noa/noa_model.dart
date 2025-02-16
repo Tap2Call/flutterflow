@@ -1,8 +1,8 @@
 import '/flutter_flow/flutter_flow_util.dart';
-import 'onboarding2_widget.dart' show Onboarding2Widget;
+import 'noa_widget.dart' show NoaWidget;
 import 'package:flutter/material.dart';
 
-class Onboarding2Model extends FlutterFlowModel<Onboarding2Widget> {
+class NoaModel extends FlutterFlowModel<NoaWidget> {
   @override
   void initState(BuildContext context) {}
 

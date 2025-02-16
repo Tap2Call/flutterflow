@@ -77,13 +77,13 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
       refreshListenable: appStateNotifier,
       navigatorKey: appNavigatorKey,
       errorBuilder: (context, state) =>
-          appStateNotifier.loggedIn ? HomePageWidget() : Login1Widget(),
+          appStateNotifier.loggedIn ? HomePageWidget() : LoginWidget(),
       routes: [
         FFRoute(
           name: '_initialize',
           path: '/',
           builder: (context, _) =>
-              appStateNotifier.loggedIn ? HomePageWidget() : Login1Widget(),
+              appStateNotifier.loggedIn ? HomePageWidget() : LoginWidget(),
         ),
         FFRoute(
           name: 'HomePage',
@@ -91,29 +91,59 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           builder: (context, params) => HomePageWidget(),
         ),
         FFRoute(
-          name: 'Onboarding0',
-          path: '/onboarding0',
-          builder: (context, params) => Onboarding0Widget(),
+          name: 'Onboarding_welcome',
+          path: '/onboardingWelcome',
+          builder: (context, params) => OnboardingWelcomeWidget(),
         ),
         FFRoute(
-          name: 'Login1',
-          path: '/login1',
-          builder: (context, params) => Login1Widget(),
+          name: 'login',
+          path: '/login',
+          builder: (context, params) => LoginWidget(),
         ),
         FFRoute(
-          name: 'Onboarding1',
-          path: '/onboarding1',
-          builder: (context, params) => Onboarding1Widget(),
+          name: 'Onboarding_call',
+          path: '/onboardingCall',
+          builder: (context, params) => OnboardingCallWidget(),
         ),
         FFRoute(
-          name: 'Onboarding2',
-          path: '/onboarding2',
-          builder: (context, params) => Onboarding2Widget(),
+          name: 'Onboarding_history',
+          path: '/onboardingHistory',
+          builder: (context, params) => OnboardingHistoryWidget(),
         ),
         FFRoute(
-          name: 'Onboarding1Copy',
-          path: '/onboarding1Copy',
-          builder: (context, params) => Onboarding1CopyWidget(),
+          name: 'Onboarding_schedule',
+          path: '/onboardingSchedule',
+          builder: (context, params) => OnboardingScheduleWidget(),
+        ),
+        FFRoute(
+          name: 'Noa',
+          path: '/noa',
+          builder: (context, params) => NoaWidget(),
+        ),
+        FFRoute(
+          name: 'Sam',
+          path: '/sam',
+          builder: (context, params) => SamWidget(),
+        ),
+        FFRoute(
+          name: 'dashboard',
+          path: '/dashboard',
+          builder: (context, params) => DashboardWidget(),
+        ),
+        FFRoute(
+          name: 'create_account',
+          path: '/createAccount',
+          builder: (context, params) => CreateAccountWidget(),
+        ),
+        FFRoute(
+          name: 'Onboarding_done',
+          path: '/onboardingDone',
+          builder: (context, params) => OnboardingDoneWidget(),
+        ),
+        FFRoute(
+          name: 'Noa_negotiate',
+          path: '/noaNegotiate',
+          builder: (context, params) => NoaNegotiateWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );
@@ -284,7 +314,7 @@ class FFRoute {
 
           if (requireAuth && !appStateNotifier.loggedIn) {
             appStateNotifier.setRedirectLocationIfUnset(state.uri.toString());
-            return '/login1';
+            return '/login';
           }
           return null;
         },

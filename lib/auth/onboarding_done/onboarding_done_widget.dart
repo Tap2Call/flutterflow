@@ -4,19 +4,19 @@ import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:ff_theme/flutter_flow/flutter_flow_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
-import 'onboarding1_model.dart';
-export 'onboarding1_model.dart';
+import 'onboarding_done_model.dart';
+export 'onboarding_done_model.dart';
 
-class Onboarding1Widget extends StatefulWidget {
-  const Onboarding1Widget({super.key});
+class OnboardingDoneWidget extends StatefulWidget {
+  const OnboardingDoneWidget({super.key});
 
   @override
-  State<Onboarding1Widget> createState() => _Onboarding1WidgetState();
+  State<OnboardingDoneWidget> createState() => _OnboardingDoneWidgetState();
 }
 
-class _Onboarding1WidgetState extends State<Onboarding1Widget>
+class _OnboardingDoneWidgetState extends State<OnboardingDoneWidget>
     with TickerProviderStateMixin {
-  late Onboarding1Model _model;
+  late OnboardingDoneModel _model;
 
   final scaffoldKey = GlobalKey<ScaffoldState>();
 
@@ -25,7 +25,7 @@ class _Onboarding1WidgetState extends State<Onboarding1Widget>
   @override
   void initState() {
     super.initState();
-    _model = createModel(context, () => Onboarding1Model());
+    _model = createModel(context, () => OnboardingDoneModel());
 
     animationsMap.addAll({
       'containerOnPageLoadAnimation1': AnimationInfo(
@@ -210,7 +210,7 @@ class _Onboarding1WidgetState extends State<Onboarding1Widget>
                         padding:
                             EdgeInsetsDirectional.fromSTEB(0.0, 44.0, 0.0, 0.0),
                         child: Text(
-                          'Call for Me',
+                          'You\'re all set!',
                           style: FlutterFlowTheme.of(context)
                               .displaySmall
                               .override(
@@ -224,7 +224,7 @@ class _Onboarding1WidgetState extends State<Onboarding1Widget>
                         padding: EdgeInsetsDirectional.fromSTEB(
                             44.0, 8.0, 44.0, 0.0),
                         child: Text(
-                          'Let\'s say you receive a claim from your provider and you want to negotiate it.\n\nAt your request, Tim will be your personal advocate and call on your behalf.',
+                          'Now that you\'ve met your AI assistants, Noa and Sam, we\'ll take you to your dashboard.\n\nRemember, you can always update your information at any time.',
                           textAlign: TextAlign.center,
                           style:
                               FlutterFlowTheme.of(context).labelMedium.override(
@@ -242,83 +242,56 @@ class _Onboarding1WidgetState extends State<Onboarding1Widget>
             ),
             Padding(
               padding: EdgeInsetsDirectional.fromSTEB(16.0, 24.0, 16.0, 44.0),
-              child: Row(
-                mainAxisSize: MainAxisSize.max,
-                children: [
-                  Expanded(
-                    child: Align(
-                      alignment: AlignmentDirectional(0.0, 0.0),
-                      child: Padding(
-                        padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 8.0, 16.0),
-                        child: FFButtonWidget(
-                          onPressed: () {
-                            print('Button pressed ...');
-                          },
-                          text: 'Back',
-                          options: FFButtonOptions(
-                            width: 230.0,
-                            height: 52.0,
-                            padding: EdgeInsetsDirectional.fromSTEB(
-                                0.0, 0.0, 0.0, 0.0),
-                            iconPadding: EdgeInsetsDirectional.fromSTEB(
-                                0.0, 0.0, 0.0, 0.0),
-                            color: FlutterFlowTheme.of(context)
-                                .secondaryBackground,
-                            textStyle:
-                                FlutterFlowTheme.of(context).bodyLarge.override(
-                                      fontFamily: 'Open Sans',
-                                      letterSpacing: 0.0,
-                                    ),
-                            elevation: 0.0,
-                            borderSide: BorderSide(
-                              color: FlutterFlowTheme.of(context).alternate,
-                              width: 2.0,
+              child: InkWell(
+                splashColor: Colors.transparent,
+                focusColor: Colors.transparent,
+                hoverColor: Colors.transparent,
+                highlightColor: Colors.transparent,
+                onTap: () async {
+                  context.pushNamed('dashboard');
+                },
+                child: Row(
+                  mainAxisSize: MainAxisSize.max,
+                  children: [
+                    Expanded(
+                      child: Align(
+                        alignment: AlignmentDirectional(0.0, 0.0),
+                        child: Padding(
+                          padding: EdgeInsetsDirectional.fromSTEB(
+                              8.0, 0.0, 0.0, 16.0),
+                          child: FFButtonWidget(
+                            onPressed: () async {
+                              context.pushNamed('dashboard');
+                            },
+                            text: 'Go to Dashboard',
+                            options: FFButtonOptions(
+                              width: 230.0,
+                              height: 52.0,
+                              padding: EdgeInsetsDirectional.fromSTEB(
+                                  0.0, 0.0, 0.0, 0.0),
+                              iconPadding: EdgeInsetsDirectional.fromSTEB(
+                                  0.0, 0.0, 0.0, 0.0),
+                              color: FlutterFlowTheme.of(context).primary,
+                              textStyle: FlutterFlowTheme.of(context)
+                                  .titleSmall
+                                  .override(
+                                    fontFamily: 'Inter Tight',
+                                    color: Colors.white,
+                                    letterSpacing: 0.0,
+                                  ),
+                              elevation: 3.0,
+                              borderSide: BorderSide(
+                                color: Colors.transparent,
+                                width: 1.0,
+                              ),
+                              borderRadius: BorderRadius.circular(12.0),
                             ),
-                            borderRadius: BorderRadius.circular(12.0),
                           ),
                         ),
                       ),
                     ),
-                  ),
-                  Expanded(
-                    child: Align(
-                      alignment: AlignmentDirectional(0.0, 0.0),
-                      child: Padding(
-                        padding:
-                            EdgeInsetsDirectional.fromSTEB(8.0, 0.0, 0.0, 16.0),
-                        child: FFButtonWidget(
-                          onPressed: () {
-                            print('Button pressed ...');
-                          },
-                          text: 'Next',
-                          options: FFButtonOptions(
-                            width: 230.0,
-                            height: 52.0,
-                            padding: EdgeInsetsDirectional.fromSTEB(
-                                0.0, 0.0, 0.0, 0.0),
-                            iconPadding: EdgeInsetsDirectional.fromSTEB(
-                                0.0, 0.0, 0.0, 0.0),
-                            color: FlutterFlowTheme.of(context).primary,
-                            textStyle: FlutterFlowTheme.of(context)
-                                .titleSmall
-                                .override(
-                                  fontFamily: 'Inter Tight',
-                                  color: Colors.white,
-                                  letterSpacing: 0.0,
-                                ),
-                            elevation: 3.0,
-                            borderSide: BorderSide(
-                              color: Colors.transparent,
-                              width: 1.0,
-                            ),
-                            borderRadius: BorderRadius.circular(12.0),
-                          ),
-                        ),
-                      ),
-                    ),
-                  ),
-                ],
+                  ],
+                ),
               ).animateOnPageLoad(animationsMap['rowOnPageLoadAnimation']!),
             ),
           ],

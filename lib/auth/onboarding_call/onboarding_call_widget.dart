@@ -4,19 +4,19 @@ import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:ff_theme/flutter_flow/flutter_flow_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
-import 'onboarding1_copy_model.dart';
-export 'onboarding1_copy_model.dart';
+import 'onboarding_call_model.dart';
+export 'onboarding_call_model.dart';
 
-class Onboarding1CopyWidget extends StatefulWidget {
-  const Onboarding1CopyWidget({super.key});
+class OnboardingCallWidget extends StatefulWidget {
+  const OnboardingCallWidget({super.key});
 
   @override
-  State<Onboarding1CopyWidget> createState() => _Onboarding1CopyWidgetState();
+  State<OnboardingCallWidget> createState() => _OnboardingCallWidgetState();
 }
 
-class _Onboarding1CopyWidgetState extends State<Onboarding1CopyWidget>
+class _OnboardingCallWidgetState extends State<OnboardingCallWidget>
     with TickerProviderStateMixin {
-  late Onboarding1CopyModel _model;
+  late OnboardingCallModel _model;
 
   final scaffoldKey = GlobalKey<ScaffoldState>();
 
@@ -25,7 +25,7 @@ class _Onboarding1CopyWidgetState extends State<Onboarding1CopyWidget>
   @override
   void initState() {
     super.initState();
-    _model = createModel(context, () => Onboarding1CopyModel());
+    _model = createModel(context, () => OnboardingCallModel());
 
     animationsMap.addAll({
       'containerOnPageLoadAnimation1': AnimationInfo(
@@ -89,26 +89,6 @@ class _Onboarding1CopyWidgetState extends State<Onboarding1CopyWidget>
         ],
       ),
       'textOnPageLoadAnimation2': AnimationInfo(
-        trigger: AnimationTrigger.onPageLoad,
-        effectsBuilder: () => [
-          VisibilityEffect(duration: 400.ms),
-          FadeEffect(
-            curve: Curves.easeInOut,
-            delay: 400.0.ms,
-            duration: 400.0.ms,
-            begin: 0.0,
-            end: 1.0,
-          ),
-          MoveEffect(
-            curve: Curves.easeInOut,
-            delay: 400.0.ms,
-            duration: 400.0.ms,
-            begin: Offset(0.0, 30.0),
-            end: Offset(0.0, 0.0),
-          ),
-        ],
-      ),
-      'textOnPageLoadAnimation3': AnimationInfo(
         trigger: AnimationTrigger.onPageLoad,
         effectsBuilder: () => [
           VisibilityEffect(duration: 400.ms),
@@ -230,7 +210,7 @@ class _Onboarding1CopyWidgetState extends State<Onboarding1CopyWidget>
                         padding:
                             EdgeInsetsDirectional.fromSTEB(0.0, 44.0, 0.0, 0.0),
                         child: Text(
-                          'Schedule for Me',
+                          'Call for Me',
                           style: FlutterFlowTheme.of(context)
                               .displaySmall
                               .override(
@@ -244,7 +224,7 @@ class _Onboarding1CopyWidgetState extends State<Onboarding1CopyWidget>
                         padding: EdgeInsetsDirectional.fromSTEB(
                             44.0, 8.0, 44.0, 0.0),
                         child: Text(
-                          'Let\'s say you\'re not feeling well enough to schedule a time to meet with your provider.\n\nNo problem, because Sam, your scheduling assistant, will also call to find the next time to meet with your provider based on your scheduling preferences.',
+                          'Let\'s say you receive a claim from your provider and you want to negotiate it.\n\nAt your request, Noa will be your personal advocate and call on your behalf.',
                           textAlign: TextAlign.center,
                           style:
                               FlutterFlowTheme.of(context).labelMedium.override(
@@ -253,47 +233,6 @@ class _Onboarding1CopyWidgetState extends State<Onboarding1CopyWidget>
                                   ),
                         ).animateOnPageLoad(
                             animationsMap['textOnPageLoadAnimation2']!),
-                      ),
-                      Padding(
-                        padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 60.0, 0.0, 0.0),
-                        child: FFButtonWidget(
-                          onPressed: () {
-                            print('Button pressed ...');
-                          },
-                          text: 'Configure Schedule\n',
-                          options: FFButtonOptions(
-                            height: 40.0,
-                            padding: EdgeInsetsDirectional.fromSTEB(
-                                16.0, 0.0, 16.0, 0.0),
-                            iconPadding: EdgeInsetsDirectional.fromSTEB(
-                                0.0, 0.0, 0.0, 0.0),
-                            color: FlutterFlowTheme.of(context).primary,
-                            textStyle: FlutterFlowTheme.of(context)
-                                .titleSmall
-                                .override(
-                                  fontFamily: 'Inter Tight',
-                                  color: Colors.white,
-                                  letterSpacing: 0.0,
-                                ),
-                            elevation: 0.0,
-                            borderRadius: BorderRadius.circular(8.0),
-                          ),
-                        ),
-                      ),
-                      Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
-                            44.0, 8.0, 44.0, 0.0),
-                        child: Text(
-                          'Configure your schedule now, \nor hit next to configure later',
-                          textAlign: TextAlign.center,
-                          style:
-                              FlutterFlowTheme.of(context).labelMedium.override(
-                                    fontFamily: 'Open Sans',
-                                    letterSpacing: 0.0,
-                                  ),
-                        ).animateOnPageLoad(
-                            animationsMap['textOnPageLoadAnimation3']!),
                       ),
                     ],
                   ),
@@ -349,8 +288,8 @@ class _Onboarding1CopyWidgetState extends State<Onboarding1CopyWidget>
                         padding:
                             EdgeInsetsDirectional.fromSTEB(8.0, 0.0, 0.0, 16.0),
                         child: FFButtonWidget(
-                          onPressed: () {
-                            print('Button pressed ...');
+                          onPressed: () async {
+                            context.pushNamed('Onboarding_done');
                           },
                           text: 'Next',
                           options: FFButtonOptions(

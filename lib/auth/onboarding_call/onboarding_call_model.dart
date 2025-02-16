@@ -1,8 +1,8 @@
 import '/flutter_flow/flutter_flow_util.dart';
-import 'onboarding0_widget.dart' show Onboarding0Widget;
+import 'onboarding_call_widget.dart' show OnboardingCallWidget;
 import 'package:flutter/material.dart';
 
-class Onboarding0Model extends FlutterFlowModel<Onboarding0Widget> {
+class OnboardingCallModel extends FlutterFlowModel<OnboardingCallWidget> {
   @override
   void initState(BuildContext context) {}
 

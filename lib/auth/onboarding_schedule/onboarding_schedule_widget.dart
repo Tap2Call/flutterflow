@@ -4,19 +4,20 @@ import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:ff_theme/flutter_flow/flutter_flow_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
-import 'onboarding0_model.dart';
-export 'onboarding0_model.dart';
+import 'onboarding_schedule_model.dart';
+export 'onboarding_schedule_model.dart';
 
-class Onboarding0Widget extends StatefulWidget {
-  const Onboarding0Widget({super.key});
+class OnboardingScheduleWidget extends StatefulWidget {
+  const OnboardingScheduleWidget({super.key});
 
   @override
-  State<Onboarding0Widget> createState() => _Onboarding0WidgetState();
+  State<OnboardingScheduleWidget> createState() =>
+      _OnboardingScheduleWidgetState();
 }
 
-class _Onboarding0WidgetState extends State<Onboarding0Widget>
+class _OnboardingScheduleWidgetState extends State<OnboardingScheduleWidget>
     with TickerProviderStateMixin {
-  late Onboarding0Model _model;
+  late OnboardingScheduleModel _model;
 
   final scaffoldKey = GlobalKey<ScaffoldState>();
 
@@ -25,7 +26,7 @@ class _Onboarding0WidgetState extends State<Onboarding0Widget>
   @override
   void initState() {
     super.initState();
-    _model = createModel(context, () => Onboarding0Model());
+    _model = createModel(context, () => OnboardingScheduleModel());
 
     animationsMap.addAll({
       'containerOnPageLoadAnimation1': AnimationInfo(
@@ -89,6 +90,26 @@ class _Onboarding0WidgetState extends State<Onboarding0Widget>
         ],
       ),
       'textOnPageLoadAnimation2': AnimationInfo(
+        trigger: AnimationTrigger.onPageLoad,
+        effectsBuilder: () => [
+          VisibilityEffect(duration: 400.ms),
+          FadeEffect(
+            curve: Curves.easeInOut,
+            delay: 400.0.ms,
+            duration: 400.0.ms,
+            begin: 0.0,
+            end: 1.0,
+          ),
+          MoveEffect(
+            curve: Curves.easeInOut,
+            delay: 400.0.ms,
+            duration: 400.0.ms,
+            begin: Offset(0.0, 30.0),
+            end: Offset(0.0, 0.0),
+          ),
+        ],
+      ),
+      'textOnPageLoadAnimation3': AnimationInfo(
         trigger: AnimationTrigger.onPageLoad,
         effectsBuilder: () => [
           VisibilityEffect(duration: 400.ms),
@@ -210,7 +231,7 @@ class _Onboarding0WidgetState extends State<Onboarding0Widget>
                         padding:
                             EdgeInsetsDirectional.fromSTEB(0.0, 44.0, 0.0, 0.0),
                         child: Text(
-                          'Welcome!',
+                          'Schedule for Me',
                           style: FlutterFlowTheme.of(context)
                               .displaySmall
                               .override(
@@ -224,7 +245,7 @@ class _Onboarding0WidgetState extends State<Onboarding0Widget>
                         padding: EdgeInsetsDirectional.fromSTEB(
                             44.0, 8.0, 44.0, 0.0),
                         child: Text(
-                          'Thanks for joining! \n\nWe want to introduce you to your set of personalized AI agents who will be advocating on behalf of you to your healthcare providers and insurance company.',
+                          'Let\'s say you\'re not feeling well enough to schedule a time to meet with your provider.\n\nNo problem, because Sam, your scheduling assistant, will also call to find the next time to meet with your provider based on your scheduling preferences.',
                           textAlign: TextAlign.center,
                           style:
                               FlutterFlowTheme.of(context).labelMedium.override(
@@ -234,69 +255,18 @@ class _Onboarding0WidgetState extends State<Onboarding0Widget>
                         ).animateOnPageLoad(
                             animationsMap['textOnPageLoadAnimation2']!),
                       ),
-                    ],
-                  ),
-                ),
-              ).animateOnPageLoad(
-                  animationsMap['containerOnPageLoadAnimation1']!),
-            ),
-            Padding(
-              padding: EdgeInsetsDirectional.fromSTEB(16.0, 24.0, 16.0, 44.0),
-              child: Row(
-                mainAxisSize: MainAxisSize.max,
-                children: [
-                  Expanded(
-                    child: Align(
-                      alignment: AlignmentDirectional(0.0, 0.0),
-                      child: Padding(
+                      Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 8.0, 16.0),
+                            EdgeInsetsDirectional.fromSTEB(0.0, 60.0, 0.0, 0.0),
                         child: FFButtonWidget(
                           onPressed: () {
                             print('Button pressed ...');
                           },
-                          text: 'Back to Login',
+                          text: 'Configure Schedule\n',
                           options: FFButtonOptions(
-                            width: 230.0,
-                            height: 52.0,
+                            height: 40.0,
                             padding: EdgeInsetsDirectional.fromSTEB(
-                                0.0, 0.0, 0.0, 0.0),
-                            iconPadding: EdgeInsetsDirectional.fromSTEB(
-                                0.0, 0.0, 0.0, 0.0),
-                            color: FlutterFlowTheme.of(context)
-                                .secondaryBackground,
-                            textStyle:
-                                FlutterFlowTheme.of(context).bodyLarge.override(
-                                      fontFamily: 'Open Sans',
-                                      letterSpacing: 0.0,
-                                    ),
-                            elevation: 0.0,
-                            borderSide: BorderSide(
-                              color: FlutterFlowTheme.of(context).alternate,
-                              width: 2.0,
-                            ),
-                            borderRadius: BorderRadius.circular(12.0),
-                          ),
-                        ),
-                      ),
-                    ),
-                  ),
-                  Expanded(
-                    child: Align(
-                      alignment: AlignmentDirectional(0.0, 0.0),
-                      child: Padding(
-                        padding:
-                            EdgeInsetsDirectional.fromSTEB(8.0, 0.0, 0.0, 16.0),
-                        child: FFButtonWidget(
-                          onPressed: () {
-                            print('Button pressed ...');
-                          },
-                          text: 'Start Onboarding',
-                          options: FFButtonOptions(
-                            width: 230.0,
-                            height: 52.0,
-                            padding: EdgeInsetsDirectional.fromSTEB(
-                                0.0, 0.0, 0.0, 0.0),
+                                16.0, 0.0, 16.0, 0.0),
                             iconPadding: EdgeInsetsDirectional.fromSTEB(
                                 0.0, 0.0, 0.0, 0.0),
                             color: FlutterFlowTheme.of(context).primary,
@@ -307,18 +277,120 @@ class _Onboarding0WidgetState extends State<Onboarding0Widget>
                                   color: Colors.white,
                                   letterSpacing: 0.0,
                                 ),
-                            elevation: 3.0,
-                            borderSide: BorderSide(
-                              color: Colors.transparent,
-                              width: 1.0,
+                            elevation: 0.0,
+                            borderRadius: BorderRadius.circular(8.0),
+                          ),
+                        ),
+                      ),
+                      Padding(
+                        padding: EdgeInsetsDirectional.fromSTEB(
+                            44.0, 8.0, 44.0, 0.0),
+                        child: Text(
+                          'Configure your schedule now, \nor hit next to configure later',
+                          textAlign: TextAlign.center,
+                          style:
+                              FlutterFlowTheme.of(context).labelMedium.override(
+                                    fontFamily: 'Open Sans',
+                                    letterSpacing: 0.0,
+                                  ),
+                        ).animateOnPageLoad(
+                            animationsMap['textOnPageLoadAnimation3']!),
+                      ),
+                    ],
+                  ),
+                ),
+              ).animateOnPageLoad(
+                  animationsMap['containerOnPageLoadAnimation1']!),
+            ),
+            Padding(
+              padding: EdgeInsetsDirectional.fromSTEB(16.0, 24.0, 16.0, 44.0),
+              child: InkWell(
+                splashColor: Colors.transparent,
+                focusColor: Colors.transparent,
+                hoverColor: Colors.transparent,
+                highlightColor: Colors.transparent,
+                onTap: () async {
+                  context.pushNamed('Onboarding_call');
+                },
+                child: Row(
+                  mainAxisSize: MainAxisSize.max,
+                  children: [
+                    Expanded(
+                      child: Align(
+                        alignment: AlignmentDirectional(0.0, 0.0),
+                        child: Padding(
+                          padding: EdgeInsetsDirectional.fromSTEB(
+                              0.0, 0.0, 8.0, 16.0),
+                          child: FFButtonWidget(
+                            onPressed: () async {
+                              context.safePop();
+                            },
+                            text: 'Back',
+                            options: FFButtonOptions(
+                              width: 230.0,
+                              height: 52.0,
+                              padding: EdgeInsetsDirectional.fromSTEB(
+                                  0.0, 0.0, 0.0, 0.0),
+                              iconPadding: EdgeInsetsDirectional.fromSTEB(
+                                  0.0, 0.0, 0.0, 0.0),
+                              color: FlutterFlowTheme.of(context)
+                                  .secondaryBackground,
+                              textStyle: FlutterFlowTheme.of(context)
+                                  .bodyLarge
+                                  .override(
+                                    fontFamily: 'Open Sans',
+                                    letterSpacing: 0.0,
+                                  ),
+                              elevation: 0.0,
+                              borderSide: BorderSide(
+                                color: FlutterFlowTheme.of(context).alternate,
+                                width: 2.0,
+                              ),
+                              borderRadius: BorderRadius.circular(12.0),
                             ),
-                            borderRadius: BorderRadius.circular(12.0),
                           ),
                         ),
                       ),
                     ),
-                  ),
-                ],
+                    Expanded(
+                      child: Align(
+                        alignment: AlignmentDirectional(0.0, 0.0),
+                        child: Padding(
+                          padding: EdgeInsetsDirectional.fromSTEB(
+                              8.0, 0.0, 0.0, 16.0),
+                          child: FFButtonWidget(
+                            onPressed: () {
+                              print('Button pressed ...');
+                            },
+                            text: 'Next',
+                            options: FFButtonOptions(
+                              width: 230.0,
+                              height: 52.0,
+                              padding: EdgeInsetsDirectional.fromSTEB(
+                                  0.0, 0.0, 0.0, 0.0),
+                              iconPadding: EdgeInsetsDirectional.fromSTEB(
+                                  0.0, 0.0, 0.0, 0.0),
+                              color: FlutterFlowTheme.of(context).primary,
+                              textStyle: FlutterFlowTheme.of(context)
+                                  .titleSmall
+                                  .override(
+                                    fontFamily: 'Inter Tight',
+                                    color: Colors.white,
+                                    letterSpacing: 0.0,
+                                  ),
+                              elevation: 3.0,
+                              borderSide: BorderSide(
+                                color: Colors.transparent,
+                                width: 1.0,
+                              ),
+                              borderRadius: BorderRadius.circular(12.0),
+                            ),
+                          ),
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
               ).animateOnPageLoad(animationsMap['rowOnPageLoadAnimation']!),
             ),
           ],

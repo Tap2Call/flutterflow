@@ -1,8 +1,8 @@
 import '/flutter_flow/flutter_flow_util.dart';
-import 'login1_widget.dart' show Login1Widget;
+import 'login_widget.dart' show LoginWidget;
 import 'package:flutter/material.dart';
 
-class Login1Model extends FlutterFlowModel<Login1Widget> {
+class LoginModel extends FlutterFlowModel<LoginWidget> {
   ///  State fields for stateful widgets in this page.
 
   // State field(s) for emailAddress widget.

@@ -1,8 +1,19 @@
 // Export pages
 export '/interaction/home_page/home_page_widget.dart' show HomePageWidget;
-export '/auth/onboarding0/onboarding0_widget.dart' show Onboarding0Widget;
-export '/auth/login1/login1_widget.dart' show Login1Widget;
-export '/auth/onboarding1/onboarding1_widget.dart' show Onboarding1Widget;
-export '/auth/onboarding2/onboarding2_widget.dart' show Onboarding2Widget;
-export '/auth/onboarding1_copy/onboarding1_copy_widget.dart'
-    show Onboarding1CopyWidget;
+export '/auth/onboarding_welcome/onboarding_welcome_widget.dart'
+    show OnboardingWelcomeWidget;
+export '/auth/login/login_widget.dart' show LoginWidget;
+export '/auth/onboarding_call/onboarding_call_widget.dart'
+    show OnboardingCallWidget;
+export '/auth/onboarding_history/onboarding_history_widget.dart'
+    show OnboardingHistoryWidget;
+export '/auth/onboarding_schedule/onboarding_schedule_widget.dart'
+    show OnboardingScheduleWidget;
+export '/agent/noa/noa_widget.dart' show NoaWidget;
+export '/agent/sam/sam_widget.dart' show SamWidget;
+export '/interaction/dashboard/dashboard_widget.dart' show DashboardWidget;
+export '/auth/create_account/create_account_widget.dart'
+    show CreateAccountWidget;
+export '/auth/onboarding_done/onboarding_done_widget.dart'
+    show OnboardingDoneWidget;
+export '/agent/noa_negotiate/noa_negotiate_widget.dart' show NoaNegotiateWidget;

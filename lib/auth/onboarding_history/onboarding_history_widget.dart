@@ -4,19 +4,20 @@ import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:ff_theme/flutter_flow/flutter_flow_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
-import 'onboarding2_model.dart';
-export 'onboarding2_model.dart';
+import 'onboarding_history_model.dart';
+export 'onboarding_history_model.dart';
 
-class Onboarding2Widget extends StatefulWidget {
-  const Onboarding2Widget({super.key});
+class OnboardingHistoryWidget extends StatefulWidget {
+  const OnboardingHistoryWidget({super.key});
 
   @override
-  State<Onboarding2Widget> createState() => _Onboarding2WidgetState();
+  State<OnboardingHistoryWidget> createState() =>
+      _OnboardingHistoryWidgetState();
 }
 
-class _Onboarding2WidgetState extends State<Onboarding2Widget>
+class _OnboardingHistoryWidgetState extends State<OnboardingHistoryWidget>
     with TickerProviderStateMixin {
-  late Onboarding2Model _model;
+  late OnboardingHistoryModel _model;
 
   final scaffoldKey = GlobalKey<ScaffoldState>();
 
@@ -25,7 +26,7 @@ class _Onboarding2WidgetState extends State<Onboarding2Widget>
   @override
   void initState() {
     super.initState();
-    _model = createModel(context, () => Onboarding2Model());
+    _model = createModel(context, () => OnboardingHistoryModel());
 
     animationsMap.addAll({
       'containerOnPageLoadAnimation1': AnimationInfo(
@@ -244,7 +245,7 @@ class _Onboarding2WidgetState extends State<Onboarding2Widget>
                         padding: EdgeInsetsDirectional.fromSTEB(
                             44.0, 8.0, 44.0, 0.0),
                         child: Text(
-                          'Optionally, you can choose to upload previous medical documents, claims, and more.\n\nThis will give Tim the context he needs to make a call on your behalf, and bring up relevant personal details.',
+                          'Optionally, you can choose to upload previous medical documents, claims, and more.\n\nThis will give your agents the contex they need to perform actions on your behalf and bring up relevant personal details.',
                           textAlign: TextAlign.center,
                           style:
                               FlutterFlowTheme.of(context).labelMedium.override(
@@ -313,8 +314,8 @@ class _Onboarding2WidgetState extends State<Onboarding2Widget>
                         padding:
                             EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 8.0, 16.0),
                         child: FFButtonWidget(
-                          onPressed: () {
-                            print('Button pressed ...');
+                          onPressed: () async {
+                            context.safePop();
                           },
                           text: 'Back',
                           options: FFButtonOptions(
@@ -349,8 +350,8 @@ class _Onboarding2WidgetState extends State<Onboarding2Widget>
                         padding:
                             EdgeInsetsDirectional.fromSTEB(8.0, 0.0, 0.0, 16.0),
                         child: FFButtonWidget(
-                          onPressed: () {
-                            print('Button pressed ...');
+                          onPressed: () async {
+                            context.pushNamed('Onboarding_schedule');
                           },
                           text: 'Next',
                           options: FFButtonOptions(

@@ -70,13 +70,6 @@ class FFAppState extends ChangeNotifier {
   void deleteGroqApiKey() {
     secureStorage.delete(key: 'ff_groqApiKey');
   }
-
-  String _gskBaEq9qEdatjs35PdTDtQWGdyb3FYosFnxQE2X1kcDNcZcHblF0Ia = '';
-  String get gskBaEq9qEdatjs35PdTDtQWGdyb3FYosFnxQE2X1kcDNcZcHblF0Ia =>
-      _gskBaEq9qEdatjs35PdTDtQWGdyb3FYosFnxQE2X1kcDNcZcHblF0Ia;
-  set gskBaEq9qEdatjs35PdTDtQWGdyb3FYosFnxQE2X1kcDNcZcHblF0Ia(String value) {
-    _gskBaEq9qEdatjs35PdTDtQWGdyb3FYosFnxQE2X1kcDNcZcHblF0Ia = value;
-  }
 }
 
 void _safeInit(Function() initializeField) {

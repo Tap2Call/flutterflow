@@ -6,19 +6,19 @@ import 'package:ff_theme/flutter_flow/flutter_flow_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'login1_model.dart';
-export 'login1_model.dart';
+import 'login_model.dart';
+export 'login_model.dart';
 
-class Login1Widget extends StatefulWidget {
-  const Login1Widget({super.key});
+class LoginWidget extends StatefulWidget {
+  const LoginWidget({super.key});
 
   @override
-  State<Login1Widget> createState() => _Login1WidgetState();
+  State<LoginWidget> createState() => _LoginWidgetState();
 }
 
-class _Login1WidgetState extends State<Login1Widget>
+class _LoginWidgetState extends State<LoginWidget>
     with TickerProviderStateMixin {
-  late Login1Model _model;
+  late LoginModel _model;
 
   final scaffoldKey = GlobalKey<ScaffoldState>();
 
@@ -27,7 +27,7 @@ class _Login1WidgetState extends State<Login1Widget>
   @override
   void initState() {
     super.initState();
-    _model = createModel(context, () => Login1Model());
+    _model = createModel(context, () => LoginModel());
 
     _model.emailAddressTextController ??= TextEditingController();
     _model.emailAddressFocusNode ??= FocusNode();
@@ -143,91 +143,92 @@ class _Login1WidgetState extends State<Login1Widget>
       },
       child: Scaffold(
         key: scaffoldKey,
-        backgroundColor: FlutterFlowTheme.of(context).secondaryBackground,
-        body: Column(
-          mainAxisSize: MainAxisSize.max,
-          children: [
-            Container(
-              width: double.infinity,
-              height: 300.0,
-              decoration: BoxDecoration(
-                gradient: LinearGradient(
-                  colors: [
-                    FlutterFlowTheme.of(context).primary,
-                    FlutterFlowTheme.of(context).error,
-                    FlutterFlowTheme.of(context).tertiary
-                  ],
-                  stops: [0.0, 0.5, 1.0],
-                  begin: AlignmentDirectional(-1.0, -1.0),
-                  end: AlignmentDirectional(1.0, 1.0),
-                ),
-              ),
-              child: Container(
-                width: 100.0,
-                height: 100.0,
+        body: SingleChildScrollView(
+          child: Column(
+            mainAxisSize: MainAxisSize.max,
+            children: [
+              Container(
+                width: double.infinity,
+                height: 300.0,
                 decoration: BoxDecoration(
                   gradient: LinearGradient(
                     colors: [
-                      Color(0x00FFFFFF),
-                      FlutterFlowTheme.of(context).secondaryBackground
+                      FlutterFlowTheme.of(context).primary,
+                      FlutterFlowTheme.of(context).error,
+                      FlutterFlowTheme.of(context).tertiary
                     ],
-                    stops: [0.0, 1.0],
-                    begin: AlignmentDirectional(0.0, -1.0),
-                    end: AlignmentDirectional(0, 1.0),
+                    stops: [0.0, 0.5, 1.0],
+                    begin: AlignmentDirectional(-1.0, -1.0),
+                    end: AlignmentDirectional(1.0, 1.0),
                   ),
                 ),
-                child: Column(
-                  mainAxisSize: MainAxisSize.max,
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Container(
-                      width: 100.0,
-                      height: 100.0,
-                      decoration: BoxDecoration(
-                        color: FlutterFlowTheme.of(context).accent4,
-                        borderRadius: BorderRadius.circular(16.0),
-                      ),
-                      child: Padding(
-                        padding: EdgeInsets.all(8.0),
-                        child: Icon(
-                          Icons.animation,
-                          color: FlutterFlowTheme.of(context).primary,
-                          size: 44.0,
+                child: Container(
+                  width: 100.0,
+                  height: 100.0,
+                  decoration: BoxDecoration(
+                    gradient: LinearGradient(
+                      colors: [
+                        Color(0x00FFFFFF),
+                        FlutterFlowTheme.of(context).secondaryBackground
+                      ],
+                      stops: [0.0, 1.0],
+                      begin: AlignmentDirectional(0.0, -1.0),
+                      end: AlignmentDirectional(0, 1.0),
+                    ),
+                  ),
+                  child: Column(
+                    mainAxisSize: MainAxisSize.max,
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Container(
+                        width: 100.0,
+                        height: 100.0,
+                        decoration: BoxDecoration(
+                          color: FlutterFlowTheme.of(context).accent4,
+                          borderRadius: BorderRadius.circular(16.0),
                         ),
+                        child: Padding(
+                          padding: EdgeInsets.all(8.0),
+                          child: Icon(
+                            Icons.animation,
+                            color: FlutterFlowTheme.of(context).primary,
+                            size: 44.0,
+                          ),
+                        ),
+                      ).animateOnPageLoad(
+                          animationsMap['containerOnPageLoadAnimation']!),
+                      Padding(
+                        padding:
+                            EdgeInsetsDirectional.fromSTEB(0.0, 12.0, 0.0, 0.0),
+                        child: Text(
+                          'Login',
+                          style: FlutterFlowTheme.of(context)
+                              .headlineSmall
+                              .override(
+                                fontFamily: 'Inter Tight',
+                                fontSize: 28.0,
+                                letterSpacing: 0.0,
+                              ),
+                        ).animateOnPageLoad(
+                            animationsMap['textOnPageLoadAnimation1']!),
                       ),
-                    ).animateOnPageLoad(
-                        animationsMap['containerOnPageLoadAnimation']!),
-                    Padding(
-                      padding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 12.0, 0.0, 0.0),
-                      child: Text(
-                        'Sign In',
-                        style:
-                            FlutterFlowTheme.of(context).headlineSmall.override(
-                                  fontFamily: 'Inter Tight',
-                                  letterSpacing: 0.0,
-                                ),
-                      ).animateOnPageLoad(
-                          animationsMap['textOnPageLoadAnimation1']!),
-                    ),
-                    Padding(
-                      padding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 4.0, 0.0, 0.0),
-                      child: Text(
-                        'Use the account below to sign in.',
-                        style:
-                            FlutterFlowTheme.of(context).labelMedium.override(
-                                  fontFamily: 'Open Sans',
-                                  letterSpacing: 0.0,
-                                ),
-                      ).animateOnPageLoad(
-                          animationsMap['textOnPageLoadAnimation2']!),
-                    ),
-                  ],
+                      Padding(
+                        padding:
+                            EdgeInsetsDirectional.fromSTEB(0.0, 4.0, 0.0, 0.0),
+                        child: Text(
+                          'Welcome! Sign back in to see updates from your agents.',
+                          style:
+                              FlutterFlowTheme.of(context).labelMedium.override(
+                                    fontFamily: 'Open Sans',
+                                    letterSpacing: 0.0,
+                                  ),
+                        ).animateOnPageLoad(
+                            animationsMap['textOnPageLoadAnimation2']!),
+                      ),
+                    ],
+                  ),
                 ),
               ),
-            ),
-            if (currentUserEmail == 'false')
               Align(
                 alignment: AlignmentDirectional(0.0, 0.0),
                 child: Padding(
@@ -245,6 +246,21 @@ class _Login1WidgetState extends State<Login1Widget>
                           child: TextFormField(
                             controller: _model.emailAddressTextController,
                             focusNode: _model.emailAddressFocusNode,
+                            onFieldSubmitted: (_) async {
+                              GoRouter.of(context).prepareAuthEvent();
+
+                              final user =
+                                  await authManager.createAccountWithEmail(
+                                context,
+                                _model.emailAddressTextController.text,
+                                _model.passwordTextController.text,
+                              );
+                              if (user == null) {
+                                return;
+                              }
+
+                              context.goNamedAuth('HomePage', context.mounted);
+                            },
                             autofocus: true,
                             autofillHints: [AutofillHints.email],
                             obscureText: false,
@@ -387,18 +403,7 @@ class _Login1WidgetState extends State<Login1Widget>
                               0.0, 0.0, 0.0, 16.0),
                           child: FFButtonWidget(
                             onPressed: () async {
-                              GoRouter.of(context).prepareAuthEvent();
-
-                              final user = await authManager.signInWithEmail(
-                                context,
-                                _model.emailAddressTextController.text,
-                                _model.passwordTextController.text,
-                              );
-                              if (user == null) {
-                                return;
-                              }
-
-                              context.goNamedAuth('HomePage', context.mounted);
+                              context.pushNamed('dashboard');
                             },
                             text: 'Sign In',
                             options: FFButtonOptions(
@@ -616,7 +621,56 @@ class _Login1WidgetState extends State<Login1Widget>
                       animationsMap['columnOnPageLoadAnimation']!),
                 ),
               ),
-          ],
+              Align(
+                alignment: AlignmentDirectional(0.0, 0.0),
+                child: Padding(
+                  padding:
+                      EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 24.0),
+                  child: Text(
+                    'New to Tap2Call? Sign up here',
+                    textAlign: TextAlign.center,
+                    style: FlutterFlowTheme.of(context).labelMedium.override(
+                          fontFamily: 'Open Sans',
+                          letterSpacing: 0.0,
+                        ),
+                  ),
+                ),
+              ),
+              Align(
+                alignment: AlignmentDirectional(0.0, 0.0),
+                child: Padding(
+                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 16.0),
+                  child: FFButtonWidget(
+                    onPressed: () async {
+                      context.pushNamed('create_account');
+                    },
+                    text: 'Sign Up',
+                    options: FFButtonOptions(
+                      width: 230.0,
+                      height: 52.0,
+                      padding:
+                          EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                      iconPadding:
+                          EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                      color: FlutterFlowTheme.of(context).primary,
+                      textStyle:
+                          FlutterFlowTheme.of(context).titleSmall.override(
+                                fontFamily: 'Inter Tight',
+                                color: Colors.white,
+                                letterSpacing: 0.0,
+                              ),
+                      elevation: 3.0,
+                      borderSide: BorderSide(
+                        color: Colors.transparent,
+                        width: 1.0,
+                      ),
+                      borderRadius: BorderRadius.circular(12.0),
+                    ),
+                  ),
+                ),
+              ),
+            ],
+          ),
         ),
       ),
     );
