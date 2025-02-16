@@ -142,8 +142,13 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
         ),
         FFRoute(
           name: 'Noa_negotiate',
-          path: '/noaNegotiate',
+          path: '/Noa_negotiate',
           builder: (context, params) => NoaNegotiateWidget(),
+        ),
+        FFRoute(
+          name: 'Noa_negotiateCopy',
+          path: '/Noa_negotiateCopy',
+          builder: (context, params) => NoaNegotiateCopyWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );

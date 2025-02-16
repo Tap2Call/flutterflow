@@ -17,3 +17,5 @@ export '/auth/create_account/create_account_widget.dart'
 export '/auth/onboarding_done/onboarding_done_widget.dart'
     show OnboardingDoneWidget;
 export '/agent/noa_negotiate/noa_negotiate_widget.dart' show NoaNegotiateWidget;
+export '/agent/noa_negotiate_copy/noa_negotiate_copy_widget.dart'
+    show NoaNegotiateCopyWidget;

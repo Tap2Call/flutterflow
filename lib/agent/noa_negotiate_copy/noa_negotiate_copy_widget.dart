@@ -6,19 +6,20 @@ import '/flutter_flow/form_field_controller.dart';
 import 'package:ff_theme/flutter_flow/flutter_flow_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
-import 'noa_negotiate_model.dart';
-export 'noa_negotiate_model.dart';
+import 'package:url_launcher/url_launcher.dart';
+import 'noa_negotiate_copy_model.dart';
+export 'noa_negotiate_copy_model.dart';
 
-class NoaNegotiateWidget extends StatefulWidget {
-  const NoaNegotiateWidget({super.key});
+class NoaNegotiateCopyWidget extends StatefulWidget {
+  const NoaNegotiateCopyWidget({super.key});
 
   @override
-  State<NoaNegotiateWidget> createState() => _NoaNegotiateWidgetState();
+  State<NoaNegotiateCopyWidget> createState() => _NoaNegotiateCopyWidgetState();
 }
 
-class _NoaNegotiateWidgetState extends State<NoaNegotiateWidget>
+class _NoaNegotiateCopyWidgetState extends State<NoaNegotiateCopyWidget>
     with TickerProviderStateMixin {
-  late NoaNegotiateModel _model;
+  late NoaNegotiateCopyModel _model;
 
   final scaffoldKey = GlobalKey<ScaffoldState>();
 
@@ -27,7 +28,7 @@ class _NoaNegotiateWidgetState extends State<NoaNegotiateWidget>
   @override
   void initState() {
     super.initState();
-    _model = createModel(context, () => NoaNegotiateModel());
+    _model = createModel(context, () => NoaNegotiateCopyModel());
 
     animationsMap.addAll({
       'rowOnPageLoadAnimation': AnimationInfo(
@@ -176,7 +177,7 @@ class _NoaNegotiateWidgetState extends State<NoaNegotiateWidget>
                                           .headlineMedium
                                           .override(
                                             fontFamily: 'Inter Tight',
-                                            fontSize: 16.0,
+                                            fontSize: 20.0,
                                             letterSpacing: 0.0,
                                           ),
                                     ),
@@ -271,12 +272,12 @@ class _NoaNegotiateWidgetState extends State<NoaNegotiateWidget>
                                           ),
                                     ),
                                     subtitle: Text(
-                                      'Olivia from Optical Insurers',
+                                      'Olivia from Optical Crafters',
                                       style: FlutterFlowTheme.of(context)
                                           .headlineMedium
                                           .override(
                                             fontFamily: 'Inter Tight',
-                                            fontSize: 16.0,
+                                            fontSize: 20.0,
                                             letterSpacing: 0.0,
                                           ),
                                     ),
@@ -376,7 +377,7 @@ class _NoaNegotiateWidgetState extends State<NoaNegotiateWidget>
                                           .headlineMedium
                                           .override(
                                             fontFamily: 'Inter Tight',
-                                            fontSize: 16.0,
+                                            fontSize: 20.0,
                                             letterSpacing: 0.0,
                                           ),
                                     ),
@@ -488,7 +489,7 @@ class _NoaNegotiateWidgetState extends State<NoaNegotiateWidget>
                                           .headlineMedium
                                           .override(
                                             fontFamily: 'Inter Tight',
-                                            fontSize: 16.0,
+                                            fontSize: 20.0,
                                             letterSpacing: 0.0,
                                           ),
                                     ),
@@ -624,98 +625,117 @@ class _NoaNegotiateWidgetState extends State<NoaNegotiateWidget>
                               Padding(
                                 padding: EdgeInsetsDirectional.fromSTEB(
                                     16.0, 24.0, 16.0, 44.0),
-                                child: Row(
-                                  mainAxisSize: MainAxisSize.max,
-                                  children: [
-                                    Expanded(
-                                      child: Align(
-                                        alignment:
-                                            AlignmentDirectional(0.0, 0.0),
-                                        child: Padding(
-                                          padding:
-                                              EdgeInsetsDirectional.fromSTEB(
-                                                  0.0, 0.0, 8.0, 16.0),
-                                          child: FFButtonWidget(
-                                            onPressed: () async {
-                                              context.safePop();
-                                            },
-                                            text: 'Back',
-                                            options: FFButtonOptions(
-                                              width: 230.0,
-                                              height: 52.0,
-                                              padding: EdgeInsetsDirectional
-                                                  .fromSTEB(0.0, 0.0, 0.0, 0.0),
-                                              iconPadding: EdgeInsetsDirectional
-                                                  .fromSTEB(0.0, 0.0, 0.0, 0.0),
-                                              color:
-                                                  FlutterFlowTheme.of(context)
-                                                      .secondaryBackground,
-                                              textStyle:
-                                                  FlutterFlowTheme.of(context)
-                                                      .bodyLarge
-                                                      .override(
-                                                        fontFamily: 'Open Sans',
-                                                        letterSpacing: 0.0,
-                                                      ),
-                                              elevation: 0.0,
-                                              borderSide: BorderSide(
+                                child: InkWell(
+                                  splashColor: Colors.transparent,
+                                  focusColor: Colors.transparent,
+                                  hoverColor: Colors.transparent,
+                                  highlightColor: Colors.transparent,
+                                  onTap: () async {
+                                    context.pushNamed('Onboarding_call');
+                                  },
+                                  child: Row(
+                                    mainAxisSize: MainAxisSize.max,
+                                    children: [
+                                      Expanded(
+                                        child: Align(
+                                          alignment:
+                                              AlignmentDirectional(0.0, 0.0),
+                                          child: Padding(
+                                            padding:
+                                                EdgeInsetsDirectional.fromSTEB(
+                                                    0.0, 0.0, 8.0, 16.0),
+                                            child: FFButtonWidget(
+                                              onPressed: () {
+                                                print('Button pressed ...');
+                                              },
+                                              text: 'Back',
+                                              options: FFButtonOptions(
+                                                width: 230.0,
+                                                height: 52.0,
+                                                padding: EdgeInsetsDirectional
+                                                    .fromSTEB(
+                                                        0.0, 0.0, 0.0, 0.0),
+                                                iconPadding:
+                                                    EdgeInsetsDirectional
+                                                        .fromSTEB(
+                                                            0.0, 0.0, 0.0, 0.0),
                                                 color:
                                                     FlutterFlowTheme.of(context)
-                                                        .alternate,
-                                                width: 2.0,
+                                                        .secondaryBackground,
+                                                textStyle:
+                                                    FlutterFlowTheme.of(context)
+                                                        .bodyLarge
+                                                        .override(
+                                                          fontFamily:
+                                                              'Open Sans',
+                                                          letterSpacing: 0.0,
+                                                        ),
+                                                elevation: 0.0,
+                                                borderSide: BorderSide(
+                                                  color: FlutterFlowTheme.of(
+                                                          context)
+                                                      .alternate,
+                                                  width: 2.0,
+                                                ),
+                                                borderRadius:
+                                                    BorderRadius.circular(12.0),
                                               ),
-                                              borderRadius:
-                                                  BorderRadius.circular(12.0),
                                             ),
                                           ),
                                         ),
                                       ),
-                                    ),
-                                    Expanded(
-                                      child: Align(
-                                        alignment:
-                                            AlignmentDirectional(0.0, 0.0),
-                                        child: Padding(
-                                          padding:
-                                              EdgeInsetsDirectional.fromSTEB(
-                                                  8.0, 0.0, 0.0, 16.0),
-                                          child: FFButtonWidget(
-                                            onPressed: () {
-                                              print('Button pressed ...');
-                                            },
-                                            text: 'Confirm',
-                                            options: FFButtonOptions(
-                                              width: 230.0,
-                                              height: 52.0,
-                                              padding: EdgeInsetsDirectional
-                                                  .fromSTEB(0.0, 0.0, 0.0, 0.0),
-                                              iconPadding: EdgeInsetsDirectional
-                                                  .fromSTEB(0.0, 0.0, 0.0, 0.0),
-                                              color:
-                                                  FlutterFlowTheme.of(context)
-                                                      .primary,
-                                              textStyle:
-                                                  FlutterFlowTheme.of(context)
-                                                      .titleSmall
-                                                      .override(
-                                                        fontFamily:
-                                                            'Inter Tight',
-                                                        color: Colors.white,
-                                                        letterSpacing: 0.0,
-                                                      ),
-                                              elevation: 3.0,
-                                              borderSide: BorderSide(
-                                                color: Colors.transparent,
-                                                width: 1.0,
+                                      Expanded(
+                                        child: Align(
+                                          alignment:
+                                              AlignmentDirectional(0.0, 0.0),
+                                          child: Padding(
+                                            padding:
+                                                EdgeInsetsDirectional.fromSTEB(
+                                                    8.0, 0.0, 0.0, 16.0),
+                                            child: FFButtonWidget(
+                                              onPressed: () async {
+                                                await launchUrl(Uri(
+                                                  scheme: 'tel',
+                                                  path: '+17606213190',
+                                                ));
+                                              },
+                                              text: 'Confirm',
+                                              options: FFButtonOptions(
+                                                width: 230.0,
+                                                height: 52.0,
+                                                padding: EdgeInsetsDirectional
+                                                    .fromSTEB(
+                                                        0.0, 0.0, 0.0, 0.0),
+                                                iconPadding:
+                                                    EdgeInsetsDirectional
+                                                        .fromSTEB(
+                                                            0.0, 0.0, 0.0, 0.0),
+                                                color:
+                                                    FlutterFlowTheme.of(context)
+                                                        .primary,
+                                                textStyle:
+                                                    FlutterFlowTheme.of(context)
+                                                        .titleSmall
+                                                        .override(
+                                                          fontFamily:
+                                                              'Inter Tight',
+                                                          color: Colors.white,
+                                                          letterSpacing: 0.0,
+                                                        ),
+                                                elevation: 3.0,
+                                                borderSide: BorderSide(
+                                                  color: Colors.transparent,
+                                                  width: 1.0,
+                                                ),
+                                                borderRadius:
+                                                    BorderRadius.circular(12.0),
                                               ),
-                                              borderRadius:
-                                                  BorderRadius.circular(12.0),
                                             ),
                                           ),
                                         ),
                                       ),
-                                    ),
-                                  ],
+                                    ],
+                                  ),
                                 ).animateOnPageLoad(
                                     animationsMap['rowOnPageLoadAnimation']!),
                               ),

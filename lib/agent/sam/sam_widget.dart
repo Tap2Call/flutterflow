@@ -253,7 +253,7 @@ class _SamWidgetState extends State<SamWidget> {
                                       padding: EdgeInsetsDirectional.fromSTEB(
                                           0.0, 0.0, 0.0, 8.0),
                                       child: Text(
-                                        '48',
+                                        '14',
                                         textAlign: TextAlign.center,
                                         style: FlutterFlowTheme.of(context)
                                             .displaySmall
@@ -265,7 +265,7 @@ class _SamWidgetState extends State<SamWidget> {
                                       ),
                                     ),
                                     Text(
-                                      'Appointments Booked',
+                                      'Appts. Booked',
                                       textAlign: TextAlign.center,
                                       style: FlutterFlowTheme.of(context)
                                           .labelMedium
@@ -327,7 +327,7 @@ class _SamWidgetState extends State<SamWidget> {
                                       padding: EdgeInsetsDirectional.fromSTEB(
                                           0.0, 0.0, 0.0, 8.0),
                                       child: Text(
-                                        '\$2400',
+                                        '102',
                                         textAlign: TextAlign.center,
                                         style: FlutterFlowTheme.of(context)
                                             .displaySmall
@@ -339,7 +339,7 @@ class _SamWidgetState extends State<SamWidget> {
                                       ),
                                     ),
                                     Text(
-                                      'Scheduled',
+                                      'Minutes Saved',
                                       textAlign: TextAlign.center,
                                       style: FlutterFlowTheme.of(context)
                                           .labelMedium
@@ -374,7 +374,7 @@ class _SamWidgetState extends State<SamWidget> {
                         ),
                       ),
                       Text(
-                        'See what Tim has been up to',
+                        'See what Noa has been up to',
                         textAlign: TextAlign.start,
                         style: FlutterFlowTheme.of(context).bodySmall.override(
                               fontFamily: 'Open Sans',
@@ -520,7 +520,7 @@ class _SamWidgetState extends State<SamWidget> {
                                           Padding(
                                             padding:
                                                 EdgeInsetsDirectional.fromSTEB(
-                                                    4.0, 8.0, 4.0, 0.0),
+                                                    0.0, 8.0, 0.0, 0.0),
                                             child: Row(
                                               mainAxisSize: MainAxisSize.max,
                                               mainAxisAlignment:
@@ -544,7 +544,7 @@ class _SamWidgetState extends State<SamWidget> {
                                                                     8.0),
                                                         child: Icon(
                                                           Icons
-                                                              .mode_comment_outlined,
+                                                              .local_phone_outlined,
                                                           color: FlutterFlowTheme
                                                                   .of(context)
                                                               .secondaryText,
@@ -560,13 +560,14 @@ class _SamWidgetState extends State<SamWidget> {
                                                                     8.0,
                                                                     0.0),
                                                         child: Text(
-                                                          'Save',
+                                                          'Retry',
                                                           style: FlutterFlowTheme
                                                                   .of(context)
                                                               .labelMedium
                                                               .override(
                                                                 fontFamily:
                                                                     'Open Sans',
+                                                                fontSize: 12.0,
                                                                 letterSpacing:
                                                                     0.0,
                                                               ),
@@ -592,8 +593,7 @@ class _SamWidgetState extends State<SamWidget> {
                                                                     0.0,
                                                                     8.0),
                                                         child: Icon(
-                                                          Icons
-                                                              .favorite_border_rounded,
+                                                          Icons.bookmark_border,
                                                           color: FlutterFlowTheme
                                                                   .of(context)
                                                               .secondaryText,
@@ -609,13 +609,14 @@ class _SamWidgetState extends State<SamWidget> {
                                                                     8.0,
                                                                     0.0),
                                                         child: Text(
-                                                          '4',
+                                                          'Save',
                                                           style: FlutterFlowTheme
                                                                   .of(context)
                                                               .labelMedium
                                                               .override(
                                                                 fontFamily:
                                                                     'Open Sans',
+                                                                fontSize: 12.0,
                                                                 letterSpacing:
                                                                     0.0,
                                                               ),
@@ -659,6 +660,7 @@ class _SamWidgetState extends State<SamWidget> {
                                                               .override(
                                                                 fontFamily:
                                                                     'Open Sans',
+                                                                fontSize: 12.0,
                                                                 letterSpacing:
                                                                     0.0,
                                                               ),
@@ -702,6 +704,7 @@ class _SamWidgetState extends State<SamWidget> {
                                                               .override(
                                                                 fontFamily:
                                                                     'Open Sans',
+                                                                fontSize: 12.0,
                                                                 letterSpacing:
                                                                     0.0,
                                                               ),
@@ -850,16 +853,6 @@ class _SamWidgetState extends State<SamWidget> {
                                                         fontFamily: 'Open Sans',
                                                         letterSpacing: 0.0,
                                                       ),
-                                            ),
-                                          ),
-                                          ClipRRect(
-                                            borderRadius:
-                                                BorderRadius.circular(12.0),
-                                            child: Image.network(
-                                              'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/flutter-flow-u-i-4dyo6d/assets/s58xwcf2zd15/Dribbble_proposeai_2@2x.jpg',
-                                              width: double.infinity,
-                                              height: 250.0,
-                                              fit: BoxFit.cover,
                                             ),
                                           ),
                                           Padding(
