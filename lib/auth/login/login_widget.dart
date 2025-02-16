@@ -154,12 +154,11 @@ class _LoginWidgetState extends State<LoginWidget>
                   gradient: LinearGradient(
                     colors: [
                       FlutterFlowTheme.of(context).primary,
-                      FlutterFlowTheme.of(context).error,
-                      FlutterFlowTheme.of(context).tertiary
+                      FlutterFlowTheme.of(context).secondary
                     ],
-                    stops: [0.0, 0.5, 1.0],
-                    begin: AlignmentDirectional(-1.0, -1.0),
-                    end: AlignmentDirectional(1.0, 1.0),
+                    stops: [0.0, 1.0],
+                    begin: AlignmentDirectional(0.0, -1.0),
+                    end: AlignmentDirectional(0, 1.0),
                   ),
                 ),
                 child: Container(
@@ -189,10 +188,11 @@ class _LoginWidgetState extends State<LoginWidget>
                         ),
                         child: Padding(
                           padding: EdgeInsets.all(8.0),
-                          child: Icon(
-                            Icons.animation,
-                            color: FlutterFlowTheme.of(context).primary,
-                            size: 44.0,
+                          child: Image.asset(
+                            'assets/images/no_bkgd.png',
+                            width: 100.0,
+                            height: 100.0,
+                            fit: BoxFit.cover,
                           ),
                         ),
                       ).animateOnPageLoad(
@@ -205,7 +205,7 @@ class _LoginWidgetState extends State<LoginWidget>
                           style: FlutterFlowTheme.of(context)
                               .headlineSmall
                               .override(
-                                fontFamily: 'Inter Tight',
+                                fontFamily: 'Noto Sans JP',
                                 fontSize: 28.0,
                                 letterSpacing: 0.0,
                               ),
@@ -216,10 +216,11 @@ class _LoginWidgetState extends State<LoginWidget>
                         padding:
                             EdgeInsetsDirectional.fromSTEB(0.0, 4.0, 0.0, 0.0),
                         child: Text(
-                          'Welcome! Sign back in to see updates from your agents.',
+                          'Welcome to caren.ai! \nSign back in to see updates from your agents.',
+                          textAlign: TextAlign.center,
                           style:
                               FlutterFlowTheme.of(context).labelMedium.override(
-                                    fontFamily: 'Open Sans',
+                                    fontFamily: 'Noto Sans JP',
                                     letterSpacing: 0.0,
                                   ),
                         ).animateOnPageLoad(
@@ -259,7 +260,7 @@ class _LoginWidgetState extends State<LoginWidget>
                                 return;
                               }
 
-                              context.goNamedAuth('HomePage', context.mounted);
+                              context.goNamedAuth('dashboard', context.mounted);
                             },
                             autofocus: true,
                             autofillHints: [AutofillHints.email],
@@ -269,7 +270,7 @@ class _LoginWidgetState extends State<LoginWidget>
                               labelStyle: FlutterFlowTheme.of(context)
                                   .labelMedium
                                   .override(
-                                    fontFamily: 'Open Sans',
+                                    fontFamily: 'Noto Sans JP',
                                     letterSpacing: 0.0,
                                   ),
                               enabledBorder: OutlineInputBorder(
@@ -308,7 +309,7 @@ class _LoginWidgetState extends State<LoginWidget>
                             style: FlutterFlowTheme.of(context)
                                 .bodyMedium
                                 .override(
-                                  fontFamily: 'Open Sans',
+                                  fontFamily: 'Noto Sans JP',
                                   letterSpacing: 0.0,
                                 ),
                             keyboardType: TextInputType.emailAddress,
@@ -334,7 +335,7 @@ class _LoginWidgetState extends State<LoginWidget>
                               labelStyle: FlutterFlowTheme.of(context)
                                   .labelMedium
                                   .override(
-                                    fontFamily: 'Open Sans',
+                                    fontFamily: 'Noto Sans JP',
                                     letterSpacing: 0.0,
                                   ),
                               enabledBorder: OutlineInputBorder(
@@ -388,7 +389,7 @@ class _LoginWidgetState extends State<LoginWidget>
                             style: FlutterFlowTheme.of(context)
                                 .bodyMedium
                                 .override(
-                                  fontFamily: 'Open Sans',
+                                  fontFamily: 'Noto Sans JP',
                                   letterSpacing: 0.0,
                                 ),
                             validator: _model.passwordTextControllerValidator
@@ -417,7 +418,7 @@ class _LoginWidgetState extends State<LoginWidget>
                               textStyle: FlutterFlowTheme.of(context)
                                   .titleSmall
                                   .override(
-                                    fontFamily: 'Inter Tight',
+                                    fontFamily: 'Noto Sans JP',
                                     color: Colors.white,
                                     letterSpacing: 0.0,
                                   ),
@@ -453,7 +454,7 @@ class _LoginWidgetState extends State<LoginWidget>
                               textStyle: FlutterFlowTheme.of(context)
                                   .bodyMedium
                                   .override(
-                                    fontFamily: 'Open Sans',
+                                    fontFamily: 'Noto Sans JP',
                                     letterSpacing: 0.0,
                                   ),
                               elevation: 0.0,
@@ -481,7 +482,7 @@ class _LoginWidgetState extends State<LoginWidget>
                                 style: FlutterFlowTheme.of(context)
                                     .labelMedium
                                     .override(
-                                      fontFamily: 'Open Sans',
+                                      fontFamily: 'Noto Sans JP',
                                       letterSpacing: 0.0,
                                     ),
                               ),
@@ -515,7 +516,7 @@ class _LoginWidgetState extends State<LoginWidget>
                                         }
 
                                         context.goNamedAuth(
-                                            'HomePage', context.mounted);
+                                            'dashboard', context.mounted);
                                       },
                                       text: 'Continue with Google',
                                       icon: FaIcon(
@@ -535,7 +536,7 @@ class _LoginWidgetState extends State<LoginWidget>
                                         textStyle: FlutterFlowTheme.of(context)
                                             .bodyMedium
                                             .override(
-                                              fontFamily: 'Open Sans',
+                                              fontFamily: 'Noto Sans JP',
                                               letterSpacing: 0.0,
                                               fontWeight: FontWeight.bold,
                                             ),
@@ -569,7 +570,7 @@ class _LoginWidgetState extends State<LoginWidget>
                                               }
 
                                               context.goNamedAuth(
-                                                  'HomePage', context.mounted);
+                                                  'dashboard', context.mounted);
                                             },
                                             text: 'Continue with Apple',
                                             icon: FaIcon(
@@ -586,15 +587,14 @@ class _LoginWidgetState extends State<LoginWidget>
                                               color:
                                                   FlutterFlowTheme.of(context)
                                                       .secondaryBackground,
-                                              textStyle:
-                                                  FlutterFlowTheme.of(context)
-                                                      .bodyMedium
-                                                      .override(
-                                                        fontFamily: 'Open Sans',
-                                                        letterSpacing: 0.0,
-                                                        fontWeight:
-                                                            FontWeight.bold,
-                                                      ),
+                                              textStyle: FlutterFlowTheme.of(
+                                                      context)
+                                                  .bodyMedium
+                                                  .override(
+                                                    fontFamily: 'Noto Sans JP',
+                                                    letterSpacing: 0.0,
+                                                    fontWeight: FontWeight.bold,
+                                                  ),
                                               elevation: 0.0,
                                               borderSide: BorderSide(
                                                 color:
@@ -630,7 +630,7 @@ class _LoginWidgetState extends State<LoginWidget>
                     'New to Tap2Call? Sign up here',
                     textAlign: TextAlign.center,
                     style: FlutterFlowTheme.of(context).labelMedium.override(
-                          fontFamily: 'Open Sans',
+                          fontFamily: 'Noto Sans JP',
                           letterSpacing: 0.0,
                         ),
                   ),
@@ -655,7 +655,7 @@ class _LoginWidgetState extends State<LoginWidget>
                       color: FlutterFlowTheme.of(context).primary,
                       textStyle:
                           FlutterFlowTheme.of(context).titleSmall.override(
-                                fontFamily: 'Inter Tight',
+                                fontFamily: 'Noto Sans JP',
                                 color: Colors.white,
                                 letterSpacing: 0.0,
                               ),

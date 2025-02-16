@@ -162,8 +162,8 @@ class _OnboardingDoneWidgetState extends State<OnboardingDoneWidget>
                   gradient: LinearGradient(
                     colors: [
                       FlutterFlowTheme.of(context).primary,
-                      FlutterFlowTheme.of(context).error,
-                      FlutterFlowTheme.of(context).tertiary
+                      FlutterFlowTheme.of(context).secondary,
+                      FlutterFlowTheme.of(context).alternate
                     ],
                     stops: [0.0, 0.5, 1.0],
                     begin: AlignmentDirectional(-1.0, -1.0),
@@ -197,8 +197,8 @@ class _OnboardingDoneWidgetState extends State<OnboardingDoneWidget>
                         ),
                         child: Padding(
                           padding: EdgeInsets.all(8.0),
-                          child: Image.network(
-                            'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/f-f-templates-q1-23-fbcr63/assets/ax4fvwjz7awx/@4xff_badgeDesign_dark_small.png',
+                          child: Image.asset(
+                            'assets/images/no_bkgd.png',
                             width: 100.0,
                             height: 100.0,
                             fit: BoxFit.cover,
@@ -214,7 +214,7 @@ class _OnboardingDoneWidgetState extends State<OnboardingDoneWidget>
                           style: FlutterFlowTheme.of(context)
                               .displaySmall
                               .override(
-                                fontFamily: 'Inter Tight',
+                                fontFamily: 'Noto Sans JP',
                                 letterSpacing: 0.0,
                               ),
                         ).animateOnPageLoad(
@@ -228,7 +228,7 @@ class _OnboardingDoneWidgetState extends State<OnboardingDoneWidget>
                           textAlign: TextAlign.center,
                           style:
                               FlutterFlowTheme.of(context).labelMedium.override(
-                                    fontFamily: 'Open Sans',
+                                    fontFamily: 'Noto Sans JP',
                                     letterSpacing: 0.0,
                                   ),
                         ).animateOnPageLoad(
@@ -275,7 +275,7 @@ class _OnboardingDoneWidgetState extends State<OnboardingDoneWidget>
                               textStyle: FlutterFlowTheme.of(context)
                                   .titleSmall
                                   .override(
-                                    fontFamily: 'Inter Tight',
+                                    fontFamily: 'Noto Sans JP',
                                     color: Colors.white,
                                     letterSpacing: 0.0,
                                   ),

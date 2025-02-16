@@ -87,8 +87,8 @@ class _NoaWidgetState extends State<NoaWidget> {
                           decoration: BoxDecoration(
                             gradient: LinearGradient(
                               colors: [
-                                FlutterFlowTheme.of(context).primary,
-                                FlutterFlowTheme.of(context).tertiary
+                                FlutterFlowTheme.of(context).secondary,
+                                FlutterFlowTheme.of(context).secondary
                               ],
                               stops: [0.0, 1.0],
                               begin: AlignmentDirectional(1.0, -1.0),
@@ -112,8 +112,8 @@ class _NoaWidgetState extends State<NoaWidget> {
                                   padding: EdgeInsets.all(4.0),
                                   child: ClipRRect(
                                     borderRadius: BorderRadius.circular(50.0),
-                                    child: Image.network(
-                                      'https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dXNlcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=900&q=60',
+                                    child: Image.asset(
+                                      'assets/images/blue.png',
                                       width: 100.0,
                                       height: 100.0,
                                       fit: BoxFit.cover,
@@ -136,7 +136,7 @@ class _NoaWidgetState extends State<NoaWidget> {
                               style: FlutterFlowTheme.of(context)
                                   .headlineSmall
                                   .override(
-                                    fontFamily: 'Inter Tight',
+                                    fontFamily: 'Noto Sans JP',
                                     letterSpacing: 0.0,
                                   ),
                             ),
@@ -148,7 +148,7 @@ class _NoaWidgetState extends State<NoaWidget> {
                                 style: FlutterFlowTheme.of(context)
                                     .labelSmall
                                     .override(
-                                      fontFamily: 'Open Sans',
+                                      fontFamily: 'Noto Sans JP',
                                       color: FlutterFlowTheme.of(context)
                                           .secondary,
                                       fontSize: 14.0,
@@ -156,8 +156,8 @@ class _NoaWidgetState extends State<NoaWidget> {
                                       fontWeight: FontWeight.w500,
                                     ),
                                 colors: [
-                                  FlutterFlowTheme.of(context).primary,
-                                  FlutterFlowTheme.of(context).tertiary
+                                  FlutterFlowTheme.of(context).secondary,
+                                  FlutterFlowTheme.of(context).secondary
                                 ],
                                 gradientDirection: GradientDirection.ltr,
                                 gradientType: GradientType.linear,
@@ -183,7 +183,7 @@ class _NoaWidgetState extends State<NoaWidget> {
                           style: FlutterFlowTheme.of(context)
                               .headlineMedium
                               .override(
-                                fontFamily: 'Inter Tight',
+                                fontFamily: 'Noto Sans JP',
                                 letterSpacing: 0.0,
                               ),
                         ),
@@ -192,7 +192,7 @@ class _NoaWidgetState extends State<NoaWidget> {
                         'Bio',
                         textAlign: TextAlign.start,
                         style: FlutterFlowTheme.of(context).bodySmall.override(
-                              fontFamily: 'Open Sans',
+                              fontFamily: 'Noto Sans JP',
                               letterSpacing: 0.0,
                             ),
                       ),
@@ -204,7 +204,7 @@ class _NoaWidgetState extends State<NoaWidget> {
                           textAlign: TextAlign.start,
                           style:
                               FlutterFlowTheme.of(context).labelLarge.override(
-                                    fontFamily: 'Open Sans',
+                                    fontFamily: 'Noto Sans JP',
                                     letterSpacing: 0.0,
                                   ),
                         ),
@@ -222,7 +222,7 @@ class _NoaWidgetState extends State<NoaWidget> {
                           style: FlutterFlowTheme.of(context)
                               .headlineMedium
                               .override(
-                                fontFamily: 'Inter Tight',
+                                fontFamily: 'Noto Sans JP',
                                 letterSpacing: 0.0,
                               ),
                         ),
@@ -231,7 +231,7 @@ class _NoaWidgetState extends State<NoaWidget> {
                         'From the past 30 days...',
                         textAlign: TextAlign.start,
                         style: FlutterFlowTheme.of(context).bodySmall.override(
-                              fontFamily: 'Open Sans',
+                              fontFamily: 'Noto Sans JP',
                               letterSpacing: 0.0,
                             ),
                       ),
@@ -258,7 +258,7 @@ class _NoaWidgetState extends State<NoaWidget> {
                                         style: FlutterFlowTheme.of(context)
                                             .displaySmall
                                             .override(
-                                              fontFamily: 'Inter Tight',
+                                              fontFamily: 'Noto Sans JP',
                                               fontSize: 24.0,
                                               letterSpacing: 0.0,
                                             ),
@@ -270,7 +270,7 @@ class _NoaWidgetState extends State<NoaWidget> {
                                       style: FlutterFlowTheme.of(context)
                                           .labelMedium
                                           .override(
-                                            fontFamily: 'Open Sans',
+                                            fontFamily: 'Noto Sans JP',
                                             letterSpacing: 0.0,
                                           ),
                                     ),
@@ -295,7 +295,7 @@ class _NoaWidgetState extends State<NoaWidget> {
                                         style: FlutterFlowTheme.of(context)
                                             .displaySmall
                                             .override(
-                                              fontFamily: 'Inter Tight',
+                                              fontFamily: 'Noto Sans JP',
                                               fontSize: 24.0,
                                               letterSpacing: 0.0,
                                             ),
@@ -307,7 +307,7 @@ class _NoaWidgetState extends State<NoaWidget> {
                                       style: FlutterFlowTheme.of(context)
                                           .labelMedium
                                           .override(
-                                            fontFamily: 'Open Sans',
+                                            fontFamily: 'Noto Sans JP',
                                             letterSpacing: 0.0,
                                           ),
                                     ),
@@ -332,7 +332,7 @@ class _NoaWidgetState extends State<NoaWidget> {
                                         style: FlutterFlowTheme.of(context)
                                             .displaySmall
                                             .override(
-                                              fontFamily: 'Inter Tight',
+                                              fontFamily: 'Noto Sans JP',
                                               fontSize: 24.0,
                                               letterSpacing: 0.0,
                                             ),
@@ -344,7 +344,7 @@ class _NoaWidgetState extends State<NoaWidget> {
                                       style: FlutterFlowTheme.of(context)
                                           .labelMedium
                                           .override(
-                                            fontFamily: 'Open Sans',
+                                            fontFamily: 'Noto Sans JP',
                                             letterSpacing: 0.0,
                                           ),
                                     ),
@@ -368,16 +368,16 @@ class _NoaWidgetState extends State<NoaWidget> {
                           style: FlutterFlowTheme.of(context)
                               .headlineMedium
                               .override(
-                                fontFamily: 'Inter Tight',
+                                fontFamily: 'Noto Sans JP',
                                 letterSpacing: 0.0,
                               ),
                         ),
                       ),
                       Text(
-                        'See what Tim has been up to',
+                        'See what Noa has been up to',
                         textAlign: TextAlign.start,
                         style: FlutterFlowTheme.of(context).bodySmall.override(
-                              fontFamily: 'Open Sans',
+                              fontFamily: 'Noto Sans JP',
                               letterSpacing: 0.0,
                             ),
                       ),
@@ -406,287 +406,6 @@ class _NoaWidgetState extends State<NoaWidget> {
                                   )
                                 ],
                               ),
-                              child: Padding(
-                                padding: EdgeInsets.all(4.0),
-                                child: Column(
-                                  mainAxisSize: MainAxisSize.max,
-                                  children: [
-                                    Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
-                                          8.0, 8.0, 8.0, 4.0),
-                                      child: Row(
-                                        mainAxisSize: MainAxisSize.max,
-                                        crossAxisAlignment:
-                                            CrossAxisAlignment.center,
-                                        children: [
-                                          InkWell(
-                                            splashColor: Colors.transparent,
-                                            focusColor: Colors.transparent,
-                                            hoverColor: Colors.transparent,
-                                            highlightColor: Colors.transparent,
-                                            onTap: () async {
-                                              Navigator.pop(context);
-                                            },
-                                            child: Container(
-                                              width: 50.0,
-                                              height: 50.0,
-                                              clipBehavior: Clip.antiAlias,
-                                              decoration: BoxDecoration(
-                                                shape: BoxShape.circle,
-                                              ),
-                                              child: Image.network(
-                                                'https://images.unsplash.com/photo-1654701473955-9aacc05202d7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzNHx8fGVufDB8fHx8&auto=format&fit=crop&w=900&q=60',
-                                                fit: BoxFit.cover,
-                                              ),
-                                            ),
-                                          ),
-                                          Padding(
-                                            padding:
-                                                EdgeInsetsDirectional.fromSTEB(
-                                                    12.0, 4.0, 0.0, 4.0),
-                                            child: Column(
-                                              mainAxisSize: MainAxisSize.max,
-                                              crossAxisAlignment:
-                                                  CrossAxisAlignment.start,
-                                              children: [
-                                                Text(
-                                                  'Trinity Healthcare',
-                                                  style: FlutterFlowTheme.of(
-                                                          context)
-                                                      .bodyLarge
-                                                      .override(
-                                                        fontFamily: 'Open Sans',
-                                                        letterSpacing: 0.0,
-                                                      ),
-                                                ),
-                                                RichText(
-                                                  textScaler:
-                                                      MediaQuery.of(context)
-                                                          .textScaler,
-                                                  text: TextSpan(
-                                                    children: [
-                                                      TextSpan(
-                                                        text: '@username',
-                                                        style: TextStyle(),
-                                                      ),
-                                                      TextSpan(
-                                                        text: ' • ',
-                                                        style: TextStyle(),
-                                                      ),
-                                                      TextSpan(
-                                                        text: '1 hour ago',
-                                                        style: TextStyle(),
-                                                      )
-                                                    ],
-                                                    style: FlutterFlowTheme.of(
-                                                            context)
-                                                        .labelSmall
-                                                        .override(
-                                                          fontFamily:
-                                                              'Open Sans',
-                                                          letterSpacing: 0.0,
-                                                        ),
-                                                  ),
-                                                ),
-                                              ],
-                                            ),
-                                          ),
-                                        ],
-                                      ),
-                                    ),
-                                    Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
-                                          8.0, 0.0, 8.0, 8.0),
-                                      child: Column(
-                                        mainAxisSize: MainAxisSize.max,
-                                        crossAxisAlignment:
-                                            CrossAxisAlignment.start,
-                                        children: [
-                                          Padding(
-                                            padding:
-                                                EdgeInsetsDirectional.fromSTEB(
-                                                    0.0, 4.0, 4.0, 12.0),
-                                            child: Text(
-                                              'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,',
-                                              style:
-                                                  FlutterFlowTheme.of(context)
-                                                      .labelMedium
-                                                      .override(
-                                                        fontFamily: 'Open Sans',
-                                                        letterSpacing: 0.0,
-                                                      ),
-                                            ),
-                                          ),
-                                          ClipRRect(
-                                            borderRadius:
-                                                BorderRadius.circular(12.0),
-                                            child: Image.network(
-                                              'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/flutter-flow-u-i-4dyo6d/assets/s58xwcf2zd15/Dribbble_proposeai_2@2x.jpg',
-                                              width: double.infinity,
-                                              height: 250.0,
-                                              fit: BoxFit.cover,
-                                            ),
-                                          ),
-                                          Padding(
-                                            padding:
-                                                EdgeInsetsDirectional.fromSTEB(
-                                                    4.0, 8.0, 4.0, 0.0),
-                                            child: Row(
-                                              mainAxisSize: MainAxisSize.max,
-                                              mainAxisAlignment:
-                                                  MainAxisAlignment.spaceAround,
-                                              children: [
-                                                Padding(
-                                                  padding: EdgeInsetsDirectional
-                                                      .fromSTEB(
-                                                          0.0, 0.0, 12.0, 0.0),
-                                                  child: Row(
-                                                    mainAxisSize:
-                                                        MainAxisSize.max,
-                                                    children: [
-                                                      Padding(
-                                                        padding:
-                                                            EdgeInsetsDirectional
-                                                                .fromSTEB(
-                                                                    8.0,
-                                                                    8.0,
-                                                                    0.0,
-                                                                    8.0),
-                                                        child: Icon(
-                                                          Icons
-                                                              .mode_comment_outlined,
-                                                          color: FlutterFlowTheme
-                                                                  .of(context)
-                                                              .secondaryText,
-                                                          size: 24.0,
-                                                        ),
-                                                      ),
-                                                      Padding(
-                                                        padding:
-                                                            EdgeInsetsDirectional
-                                                                .fromSTEB(
-                                                                    8.0,
-                                                                    0.0,
-                                                                    8.0,
-                                                                    0.0),
-                                                        child: Text(
-                                                          '4',
-                                                          style: FlutterFlowTheme
-                                                                  .of(context)
-                                                              .labelMedium
-                                                              .override(
-                                                                fontFamily:
-                                                                    'Open Sans',
-                                                                letterSpacing:
-                                                                    0.0,
-                                                              ),
-                                                        ),
-                                                      ),
-                                                    ],
-                                                  ),
-                                                ),
-                                                Padding(
-                                                  padding: EdgeInsetsDirectional
-                                                      .fromSTEB(
-                                                          0.0, 0.0, 12.0, 0.0),
-                                                  child: Row(
-                                                    mainAxisSize:
-                                                        MainAxisSize.max,
-                                                    children: [
-                                                      Padding(
-                                                        padding:
-                                                            EdgeInsetsDirectional
-                                                                .fromSTEB(
-                                                                    8.0,
-                                                                    8.0,
-                                                                    0.0,
-                                                                    8.0),
-                                                        child: Icon(
-                                                          Icons
-                                                              .favorite_border_rounded,
-                                                          color: FlutterFlowTheme
-                                                                  .of(context)
-                                                              .secondaryText,
-                                                          size: 24.0,
-                                                        ),
-                                                      ),
-                                                      Padding(
-                                                        padding:
-                                                            EdgeInsetsDirectional
-                                                                .fromSTEB(
-                                                                    4.0,
-                                                                    0.0,
-                                                                    8.0,
-                                                                    0.0),
-                                                        child: Text(
-                                                          '4',
-                                                          style: FlutterFlowTheme
-                                                                  .of(context)
-                                                              .labelMedium
-                                                              .override(
-                                                                fontFamily:
-                                                                    'Open Sans',
-                                                                letterSpacing:
-                                                                    0.0,
-                                                              ),
-                                                        ),
-                                                      ),
-                                                    ],
-                                                  ),
-                                                ),
-                                                Padding(
-                                                  padding: EdgeInsetsDirectional
-                                                      .fromSTEB(
-                                                          0.0, 0.0, 12.0, 0.0),
-                                                  child: Row(
-                                                    mainAxisSize:
-                                                        MainAxisSize.max,
-                                                    children: [
-                                                      Padding(
-                                                        padding:
-                                                            EdgeInsets.all(8.0),
-                                                        child: Icon(
-                                                          Icons.bookmark_border,
-                                                          color: FlutterFlowTheme
-                                                                  .of(context)
-                                                              .secondaryText,
-                                                          size: 24.0,
-                                                        ),
-                                                      ),
-                                                    ],
-                                                  ),
-                                                ),
-                                                Padding(
-                                                  padding: EdgeInsetsDirectional
-                                                      .fromSTEB(
-                                                          0.0, 0.0, 12.0, 0.0),
-                                                  child: Row(
-                                                    mainAxisSize:
-                                                        MainAxisSize.max,
-                                                    children: [
-                                                      Padding(
-                                                        padding:
-                                                            EdgeInsets.all(8.0),
-                                                        child: Icon(
-                                                          Icons.ios_share,
-                                                          color: FlutterFlowTheme
-                                                                  .of(context)
-                                                              .secondaryText,
-                                                          size: 24.0,
-                                                        ),
-                                                      ),
-                                                    ],
-                                                  ),
-                                                ),
-                                              ],
-                                            ),
-                                          ),
-                                        ],
-                                      ),
-                                    ),
-                                  ],
-                                ),
-                              ),
                             ),
                           ),
                           Padding(
@@ -753,12 +472,13 @@ class _NoaWidgetState extends State<NoaWidget> {
                                                   CrossAxisAlignment.start,
                                               children: [
                                                 Text(
-                                                  'Andrew Daniels',
+                                                  'Denny from Dynamic Dental',
                                                   style: FlutterFlowTheme.of(
                                                           context)
                                                       .bodyLarge
                                                       .override(
-                                                        fontFamily: 'Open Sans',
+                                                        fontFamily:
+                                                            'Noto Sans JP',
                                                         letterSpacing: 0.0,
                                                       ),
                                                 ),
@@ -769,7 +489,7 @@ class _NoaWidgetState extends State<NoaWidget> {
                                                   text: TextSpan(
                                                     children: [
                                                       TextSpan(
-                                                        text: '@username',
+                                                        text: '259-095-4093',
                                                         style: TextStyle(),
                                                       ),
                                                       TextSpan(
@@ -777,7 +497,7 @@ class _NoaWidgetState extends State<NoaWidget> {
                                                         style: TextStyle(),
                                                       ),
                                                       TextSpan(
-                                                        text: '4 mins ago',
+                                                        text: '1 hour ago',
                                                         style: TextStyle(),
                                                       )
                                                     ],
@@ -786,7 +506,7 @@ class _NoaWidgetState extends State<NoaWidget> {
                                                         .labelSmall
                                                         .override(
                                                           fontFamily:
-                                                              'Open Sans',
+                                                              'Noto Sans JP',
                                                           letterSpacing: 0.0,
                                                         ),
                                                   ),
@@ -810,30 +530,21 @@ class _NoaWidgetState extends State<NoaWidget> {
                                                 EdgeInsetsDirectional.fromSTEB(
                                                     0.0, 4.0, 4.0, 12.0),
                                             child: Text(
-                                              'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,',
+                                              'I see that \$800 was approved for the core procedure. However, the remaining \$1,200 was denied because our policy categorizes certain components, such as dental crown placement and advanced anesthesia, as non-essential or ...',
                                               style:
                                                   FlutterFlowTheme.of(context)
                                                       .labelMedium
                                                       .override(
-                                                        fontFamily: 'Open Sans',
+                                                        fontFamily:
+                                                            'Noto Sans JP',
                                                         letterSpacing: 0.0,
                                                       ),
-                                            ),
-                                          ),
-                                          ClipRRect(
-                                            borderRadius:
-                                                BorderRadius.circular(12.0),
-                                            child: Image.network(
-                                              'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/flutter-flow-u-i-4dyo6d/assets/s58xwcf2zd15/Dribbble_proposeai_2@2x.jpg',
-                                              width: double.infinity,
-                                              height: 250.0,
-                                              fit: BoxFit.cover,
                                             ),
                                           ),
                                           Padding(
                                             padding:
                                                 EdgeInsetsDirectional.fromSTEB(
-                                                    4.0, 8.0, 4.0, 0.0),
+                                                    0.0, 8.0, 0.0, 0.0),
                                             child: Row(
                                               mainAxisSize: MainAxisSize.max,
                                               mainAxisAlignment:
@@ -857,7 +568,7 @@ class _NoaWidgetState extends State<NoaWidget> {
                                                                     8.0),
                                                         child: Icon(
                                                           Icons
-                                                              .mode_comment_outlined,
+                                                              .local_phone_outlined,
                                                           color: FlutterFlowTheme
                                                                   .of(context)
                                                               .secondaryText,
@@ -873,13 +584,14 @@ class _NoaWidgetState extends State<NoaWidget> {
                                                                     8.0,
                                                                     0.0),
                                                         child: Text(
-                                                          '4',
+                                                          'Retry',
                                                           style: FlutterFlowTheme
                                                                   .of(context)
                                                               .labelMedium
                                                               .override(
                                                                 fontFamily:
-                                                                    'Open Sans',
+                                                                    'Noto Sans JP',
+                                                                fontSize: 12.0,
                                                                 letterSpacing:
                                                                     0.0,
                                                               ),
@@ -905,8 +617,7 @@ class _NoaWidgetState extends State<NoaWidget> {
                                                                     0.0,
                                                                     8.0),
                                                         child: Icon(
-                                                          Icons
-                                                              .favorite_border_rounded,
+                                                          Icons.bookmark_border,
                                                           color: FlutterFlowTheme
                                                                   .of(context)
                                                               .secondaryText,
@@ -922,13 +633,14 @@ class _NoaWidgetState extends State<NoaWidget> {
                                                                     8.0,
                                                                     0.0),
                                                         child: Text(
-                                                          '4',
+                                                          'Save',
                                                           style: FlutterFlowTheme
                                                                   .of(context)
                                                               .labelMedium
                                                               .override(
                                                                 fontFamily:
-                                                                    'Open Sans',
+                                                                    'Noto Sans JP',
+                                                                fontSize: 12.0,
                                                                 letterSpacing:
                                                                     0.0,
                                                               ),
@@ -949,11 +661,33 @@ class _NoaWidgetState extends State<NoaWidget> {
                                                         padding:
                                                             EdgeInsets.all(8.0),
                                                         child: Icon(
-                                                          Icons.bookmark_border,
+                                                          Icons.mail_outline,
                                                           color: FlutterFlowTheme
                                                                   .of(context)
                                                               .secondaryText,
                                                           size: 24.0,
+                                                        ),
+                                                      ),
+                                                      Padding(
+                                                        padding:
+                                                            EdgeInsetsDirectional
+                                                                .fromSTEB(
+                                                                    4.0,
+                                                                    0.0,
+                                                                    8.0,
+                                                                    0.0),
+                                                        child: Text(
+                                                          'Email',
+                                                          style: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .labelMedium
+                                                              .override(
+                                                                fontFamily:
+                                                                    'Noto Sans JP',
+                                                                fontSize: 12.0,
+                                                                letterSpacing:
+                                                                    0.0,
+                                                              ),
                                                         ),
                                                       ),
                                                     ],
@@ -971,11 +705,33 @@ class _NoaWidgetState extends State<NoaWidget> {
                                                         padding:
                                                             EdgeInsets.all(8.0),
                                                         child: Icon(
-                                                          Icons.ios_share,
+                                                          Icons.flag_outlined,
                                                           color: FlutterFlowTheme
                                                                   .of(context)
                                                               .secondaryText,
                                                           size: 24.0,
+                                                        ),
+                                                      ),
+                                                      Padding(
+                                                        padding:
+                                                            EdgeInsetsDirectional
+                                                                .fromSTEB(
+                                                                    4.0,
+                                                                    0.0,
+                                                                    8.0,
+                                                                    0.0),
+                                                        child: Text(
+                                                          'Flag',
+                                                          style: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .labelMedium
+                                                              .override(
+                                                                fontFamily:
+                                                                    'Noto Sans JP',
+                                                                fontSize: 12.0,
+                                                                letterSpacing:
+                                                                    0.0,
+                                                              ),
                                                         ),
                                                       ),
                                                     ],

@@ -4,6 +4,7 @@ import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:ff_theme/flutter_flow/flutter_flow_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
+import 'package:url_launcher/url_launcher.dart';
 import 'onboarding_call_model.dart';
 export 'onboarding_call_model.dart';
 
@@ -162,8 +163,8 @@ class _OnboardingCallWidgetState extends State<OnboardingCallWidget>
                   gradient: LinearGradient(
                     colors: [
                       FlutterFlowTheme.of(context).primary,
-                      FlutterFlowTheme.of(context).error,
-                      FlutterFlowTheme.of(context).tertiary
+                      FlutterFlowTheme.of(context).secondary,
+                      FlutterFlowTheme.of(context).alternate
                     ],
                     stops: [0.0, 0.5, 1.0],
                     begin: AlignmentDirectional(-1.0, -1.0),
@@ -197,8 +198,8 @@ class _OnboardingCallWidgetState extends State<OnboardingCallWidget>
                         ),
                         child: Padding(
                           padding: EdgeInsets.all(8.0),
-                          child: Image.network(
-                            'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/f-f-templates-q1-23-fbcr63/assets/ax4fvwjz7awx/@4xff_badgeDesign_dark_small.png',
+                          child: Image.asset(
+                            'assets/images/blue.png',
                             width: 100.0,
                             height: 100.0,
                             fit: BoxFit.cover,
@@ -214,7 +215,7 @@ class _OnboardingCallWidgetState extends State<OnboardingCallWidget>
                           style: FlutterFlowTheme.of(context)
                               .displaySmall
                               .override(
-                                fontFamily: 'Inter Tight',
+                                fontFamily: 'Noto Sans JP',
                                 letterSpacing: 0.0,
                               ),
                         ).animateOnPageLoad(
@@ -228,7 +229,7 @@ class _OnboardingCallWidgetState extends State<OnboardingCallWidget>
                           textAlign: TextAlign.center,
                           style:
                               FlutterFlowTheme.of(context).labelMedium.override(
-                                    fontFamily: 'Open Sans',
+                                    fontFamily: 'Noto Sans JP',
                                     letterSpacing: 0.0,
                                   ),
                         ).animateOnPageLoad(
@@ -267,7 +268,7 @@ class _OnboardingCallWidgetState extends State<OnboardingCallWidget>
                                 .secondaryBackground,
                             textStyle:
                                 FlutterFlowTheme.of(context).bodyLarge.override(
-                                      fontFamily: 'Open Sans',
+                                      fontFamily: 'Noto Sans JP',
                                       letterSpacing: 0.0,
                                     ),
                             elevation: 0.0,
@@ -289,9 +290,12 @@ class _OnboardingCallWidgetState extends State<OnboardingCallWidget>
                             EdgeInsetsDirectional.fromSTEB(8.0, 0.0, 0.0, 16.0),
                         child: FFButtonWidget(
                           onPressed: () async {
-                            context.pushNamed('Onboarding_done');
+                            await launchUrl(Uri(
+                              scheme: 'tel',
+                              path: '+15595467766',
+                            ));
                           },
-                          text: 'Next',
+                          text: 'Call',
                           options: FFButtonOptions(
                             width: 230.0,
                             height: 52.0,
@@ -303,7 +307,7 @@ class _OnboardingCallWidgetState extends State<OnboardingCallWidget>
                             textStyle: FlutterFlowTheme.of(context)
                                 .titleSmall
                                 .override(
-                                  fontFamily: 'Inter Tight',
+                                  fontFamily: 'Noto Sans JP',
                                   color: Colors.white,
                                   letterSpacing: 0.0,
                                 ),

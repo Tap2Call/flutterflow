@@ -120,7 +120,7 @@ class _CreateAccountWidgetState extends State<CreateAccountWidget>
                                 style: FlutterFlowTheme.of(context)
                                     .displayMedium
                                     .override(
-                                      fontFamily: 'Inter Tight',
+                                      fontFamily: 'Noto Sans JP',
                                       fontSize: 28.0,
                                       letterSpacing: 0.0,
                                     ),
@@ -135,7 +135,7 @@ class _CreateAccountWidgetState extends State<CreateAccountWidget>
                                 style: FlutterFlowTheme.of(context)
                                     .labelLarge
                                     .override(
-                                      fontFamily: 'Open Sans',
+                                      fontFamily: 'Noto Sans JP',
                                       letterSpacing: 0.0,
                                     ),
                               ),
@@ -154,7 +154,7 @@ class _CreateAccountWidgetState extends State<CreateAccountWidget>
                                   labelStyle: FlutterFlowTheme.of(context)
                                       .labelLarge
                                       .override(
-                                        fontFamily: 'Open Sans',
+                                        fontFamily: 'Noto Sans JP',
                                         letterSpacing: 0.0,
                                       ),
                                   enabledBorder: UnderlineInputBorder(
@@ -209,7 +209,7 @@ class _CreateAccountWidgetState extends State<CreateAccountWidget>
                                 style: FlutterFlowTheme.of(context)
                                     .bodyLarge
                                     .override(
-                                      fontFamily: 'Open Sans',
+                                      fontFamily: 'Noto Sans JP',
                                       letterSpacing: 0.0,
                                       lineHeight: 3.0,
                                     ),
@@ -230,7 +230,7 @@ class _CreateAccountWidgetState extends State<CreateAccountWidget>
                                   labelStyle: FlutterFlowTheme.of(context)
                                       .labelLarge
                                       .override(
-                                        fontFamily: 'Open Sans',
+                                        fontFamily: 'Noto Sans JP',
                                         letterSpacing: 0.0,
                                       ),
                                   enabledBorder: UnderlineInputBorder(
@@ -285,7 +285,7 @@ class _CreateAccountWidgetState extends State<CreateAccountWidget>
                                 style: FlutterFlowTheme.of(context)
                                     .bodyLarge
                                     .override(
-                                      fontFamily: 'Open Sans',
+                                      fontFamily: 'Noto Sans JP',
                                       letterSpacing: 0.0,
                                       lineHeight: 3.0,
                                     ),
@@ -307,7 +307,7 @@ class _CreateAccountWidgetState extends State<CreateAccountWidget>
                                   labelStyle: FlutterFlowTheme.of(context)
                                       .labelLarge
                                       .override(
-                                        fontFamily: 'Open Sans',
+                                        fontFamily: 'Noto Sans JP',
                                         letterSpacing: 0.0,
                                       ),
                                   enabledBorder: UnderlineInputBorder(
@@ -377,7 +377,7 @@ class _CreateAccountWidgetState extends State<CreateAccountWidget>
                                 style: FlutterFlowTheme.of(context)
                                     .bodyLarge
                                     .override(
-                                      fontFamily: 'Open Sans',
+                                      fontFamily: 'Noto Sans JP',
                                       letterSpacing: 0.0,
                                       lineHeight: 3.0,
                                     ),
@@ -404,7 +404,7 @@ class _CreateAccountWidgetState extends State<CreateAccountWidget>
                                     style: FlutterFlowTheme.of(context)
                                         .labelMedium
                                         .override(
-                                          fontFamily: 'Open Sans',
+                                          fontFamily: 'Noto Sans JP',
                                           letterSpacing: 0.0,
                                         ),
                                   ),
@@ -458,7 +458,8 @@ class _CreateAccountWidgetState extends State<CreateAccountWidget>
                                                 FlutterFlowTheme.of(context)
                                                     .bodyLarge
                                                     .override(
-                                                      fontFamily: 'Open Sans',
+                                                      fontFamily:
+                                                          'Noto Sans JP',
                                                       letterSpacing: 0.0,
                                                     ),
                                             elevation: 0.0,
@@ -502,7 +503,8 @@ class _CreateAccountWidgetState extends State<CreateAccountWidget>
                                                 FlutterFlowTheme.of(context)
                                                     .titleSmall
                                                     .override(
-                                                      fontFamily: 'Inter Tight',
+                                                      fontFamily:
+                                                          'Noto Sans JP',
                                                       color: Colors.white,
                                                       letterSpacing: 0.0,
                                                     ),

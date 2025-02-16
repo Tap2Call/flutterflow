@@ -147,7 +147,8 @@ class _DashboardWidgetState extends State<DashboardWidget> {
                                           .displaySmall
                                           .override(
                                             fontFamily: 'Outfit',
-                                            color: Color(0xFF4B39EF),
+                                            color: FlutterFlowTheme.of(context)
+                                                .primary,
                                             fontSize: 36.0,
                                             letterSpacing: 0.0,
                                             fontWeight: FontWeight.w600,
@@ -209,10 +210,10 @@ class _DashboardWidgetState extends State<DashboardWidget> {
                                                             MainAxisSize.max,
                                                         children: [
                                                           Icon(
-                                                            Icons
-                                                                .folder_special_rounded,
-                                                            color: Color(
-                                                                0xFF4B39EF),
+                                                            Icons.sell,
+                                                            color: FlutterFlowTheme
+                                                                    .of(context)
+                                                                .tertiary,
                                                             size: 48.0,
                                                           ),
                                                           Padding(
@@ -241,7 +242,7 @@ class _DashboardWidgetState extends State<DashboardWidget> {
                                                                       .labelMedium
                                                                       .override(
                                                                         fontFamily:
-                                                                            'Open Sans',
+                                                                            'Noto Sans JP',
                                                                         letterSpacing:
                                                                             0.0,
                                                                       ),
@@ -253,7 +254,7 @@ class _DashboardWidgetState extends State<DashboardWidget> {
                                                                       .displaySmall
                                                                       .override(
                                                                         fontFamily:
-                                                                            'Inter Tight',
+                                                                            'Noto Sans JP',
                                                                         fontSize:
                                                                             24.0,
                                                                         letterSpacing:
@@ -285,7 +286,7 @@ class _DashboardWidgetState extends State<DashboardWidget> {
                                                                             text:
                                                                                 '\$39 saved',
                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                  fontFamily: 'Open Sans',
+                                                                                  fontFamily: 'Noto Sans JP',
                                                                                   color: FlutterFlowTheme.of(context).primary,
                                                                                   letterSpacing: 0.0,
                                                                                   fontWeight: FontWeight.bold,
@@ -301,7 +302,7 @@ class _DashboardWidgetState extends State<DashboardWidget> {
                                                                         style: FlutterFlowTheme.of(context)
                                                                             .labelMedium
                                                                             .override(
-                                                                              fontFamily: 'Open Sans',
+                                                                              fontFamily: 'Noto Sans JP',
                                                                               letterSpacing: 0.0,
                                                                             ),
                                                                       ),
@@ -348,10 +349,10 @@ class _DashboardWidgetState extends State<DashboardWidget> {
                                                             MainAxisSize.max,
                                                         children: [
                                                           Icon(
-                                                            Icons
-                                                                .folder_special_rounded,
-                                                            color: Color(
-                                                                0xFF39D2C0),
+                                                            Icons.add_call,
+                                                            color: FlutterFlowTheme
+                                                                    .of(context)
+                                                                .secondary,
                                                             size: 48.0,
                                                           ),
                                                           Padding(
@@ -396,7 +397,7 @@ class _DashboardWidgetState extends State<DashboardWidget> {
                                                                         style: FlutterFlowTheme.of(context)
                                                                             .labelMedium
                                                                             .override(
-                                                                              fontFamily: 'Open Sans',
+                                                                              fontFamily: 'Noto Sans JP',
                                                                               letterSpacing: 0.0,
                                                                             ),
                                                                       ),
@@ -405,7 +406,7 @@ class _DashboardWidgetState extends State<DashboardWidget> {
                                                                         style: FlutterFlowTheme.of(context)
                                                                             .displaySmall
                                                                             .override(
-                                                                              fontFamily: 'Inter Tight',
+                                                                              fontFamily: 'Noto Sans JP',
                                                                               fontSize: 24.0,
                                                                               letterSpacing: 0.0,
                                                                             ),
@@ -431,7 +432,7 @@ class _DashboardWidgetState extends State<DashboardWidget> {
                                                                                 TextSpan(
                                                                                   text: '11 calls ',
                                                                                   style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                        fontFamily: 'Open Sans',
+                                                                                        fontFamily: 'Noto Sans JP',
                                                                                         color: FlutterFlowTheme.of(context).primary,
                                                                                         letterSpacing: 0.0,
                                                                                         fontWeight: FontWeight.bold,
@@ -443,7 +444,7 @@ class _DashboardWidgetState extends State<DashboardWidget> {
                                                                                 )
                                                                               ],
                                                                               style: FlutterFlowTheme.of(context).labelMedium.override(
-                                                                                    fontFamily: 'Open Sans',
+                                                                                    fontFamily: 'Noto Sans JP',
                                                                                     letterSpacing: 0.0,
                                                                                   ),
                                                                             ),
@@ -492,9 +493,10 @@ class _DashboardWidgetState extends State<DashboardWidget> {
                                                         children: [
                                                           Icon(
                                                             Icons
-                                                                .folder_special_rounded,
-                                                            color: Color(
-                                                                0xFFEE8B60),
+                                                                .add_reaction_rounded,
+                                                            color: FlutterFlowTheme
+                                                                    .of(context)
+                                                                .alternate,
                                                             size: 48.0,
                                                           ),
                                                           Padding(
@@ -539,7 +541,7 @@ class _DashboardWidgetState extends State<DashboardWidget> {
                                                                         style: FlutterFlowTheme.of(context)
                                                                             .labelMedium
                                                                             .override(
-                                                                              fontFamily: 'Open Sans',
+                                                                              fontFamily: 'Noto Sans JP',
                                                                               letterSpacing: 0.0,
                                                                             ),
                                                                       ),
@@ -548,7 +550,7 @@ class _DashboardWidgetState extends State<DashboardWidget> {
                                                                         style: FlutterFlowTheme.of(context)
                                                                             .displaySmall
                                                                             .override(
-                                                                              fontFamily: 'Inter Tight',
+                                                                              fontFamily: 'Noto Sans JP',
                                                                               fontSize: 24.0,
                                                                               letterSpacing: 0.0,
                                                                             ),
@@ -574,7 +576,7 @@ class _DashboardWidgetState extends State<DashboardWidget> {
                                                                                 TextSpan(
                                                                                   text: '%15',
                                                                                   style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                        fontFamily: 'Open Sans',
+                                                                                        fontFamily: 'Noto Sans JP',
                                                                                         color: FlutterFlowTheme.of(context).primary,
                                                                                         letterSpacing: 0.0,
                                                                                         fontWeight: FontWeight.bold,
@@ -586,7 +588,7 @@ class _DashboardWidgetState extends State<DashboardWidget> {
                                                                                 )
                                                                               ],
                                                                               style: FlutterFlowTheme.of(context).labelMedium.override(
-                                                                                    fontFamily: 'Open Sans',
+                                                                                    fontFamily: 'Noto Sans JP',
                                                                                     letterSpacing: 0.0,
                                                                                   ),
                                                                             ),
@@ -674,7 +676,7 @@ class _DashboardWidgetState extends State<DashboardWidget> {
                                 style: FlutterFlowTheme.of(context)
                                     .titleLarge
                                     .override(
-                                      fontFamily: 'Inter Tight',
+                                      fontFamily: 'Noto Sans JP',
                                       letterSpacing: 0.0,
                                     ),
                               ),
@@ -762,7 +764,7 @@ class _DashboardWidgetState extends State<DashboardWidget> {
                                                               .labelSmall
                                                               .override(
                                                                 fontFamily:
-                                                                    'Open Sans',
+                                                                    'Noto Sans JP',
                                                                 color: FlutterFlowTheme.of(
                                                                         context)
                                                                     .accent4,
@@ -786,7 +788,7 @@ class _DashboardWidgetState extends State<DashboardWidget> {
                                                                 .displayMedium
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Inter Tight',
+                                                                      'Noto Sans JP',
                                                                   color: FlutterFlowTheme.of(
                                                                           context)
                                                                       .info,
@@ -805,7 +807,7 @@ class _DashboardWidgetState extends State<DashboardWidget> {
                                                               .displayMedium
                                                               .override(
                                                                 fontFamily:
-                                                                    'Inter Tight',
+                                                                    'Noto Sans JP',
                                                                 color: FlutterFlowTheme.of(
                                                                         context)
                                                                     .info,
@@ -934,7 +936,7 @@ class _DashboardWidgetState extends State<DashboardWidget> {
                                                               .labelSmall
                                                               .override(
                                                                 fontFamily:
-                                                                    'Open Sans',
+                                                                    'Noto Sans JP',
                                                                 color: FlutterFlowTheme.of(
                                                                         context)
                                                                     .accent4,
@@ -958,7 +960,7 @@ class _DashboardWidgetState extends State<DashboardWidget> {
                                                                 .displayMedium
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Inter Tight',
+                                                                      'Noto Sans JP',
                                                                   color: FlutterFlowTheme.of(
                                                                           context)
                                                                       .info,
@@ -977,7 +979,7 @@ class _DashboardWidgetState extends State<DashboardWidget> {
                                                               .displayMedium
                                                               .override(
                                                                 fontFamily:
-                                                                    'Inter Tight',
+                                                                    'Noto Sans JP',
                                                                 color: FlutterFlowTheme.of(
                                                                         context)
                                                                     .info,
@@ -1105,7 +1107,7 @@ class _DashboardWidgetState extends State<DashboardWidget> {
                                                               .labelSmall
                                                               .override(
                                                                 fontFamily:
-                                                                    'Open Sans',
+                                                                    'Noto Sans JP',
                                                                 color: FlutterFlowTheme.of(
                                                                         context)
                                                                     .accent4,
@@ -1129,7 +1131,7 @@ class _DashboardWidgetState extends State<DashboardWidget> {
                                                                 .displayMedium
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Inter Tight',
+                                                                      'Noto Sans JP',
                                                                   color: FlutterFlowTheme.of(
                                                                           context)
                                                                       .info,
@@ -1148,7 +1150,7 @@ class _DashboardWidgetState extends State<DashboardWidget> {
                                                               .displayMedium
                                                               .override(
                                                                 fontFamily:
-                                                                    'Inter Tight',
+                                                                    'Noto Sans JP',
                                                                 color: FlutterFlowTheme.of(
                                                                         context)
                                                                     .info,
@@ -1243,7 +1245,7 @@ class _DashboardWidgetState extends State<DashboardWidget> {
                               style: FlutterFlowTheme.of(context)
                                   .titleLarge
                                   .override(
-                                    fontFamily: 'Inter Tight',
+                                    fontFamily: 'Noto Sans JP',
                                     letterSpacing: 0.0,
                                   ),
                             ),
@@ -1303,7 +1305,7 @@ class _DashboardWidgetState extends State<DashboardWidget> {
                                   style: FlutterFlowTheme.of(context)
                                       .bodyMedium
                                       .override(
-                                        fontFamily: 'Open Sans',
+                                        fontFamily: 'Noto Sans JP',
                                         letterSpacing: 0.0,
                                       ),
                                 ),
@@ -1323,7 +1325,7 @@ class _DashboardWidgetState extends State<DashboardWidget> {
                                     hoverColor: Colors.transparent,
                                     highlightColor: Colors.transparent,
                                     onTap: () async {
-                                      context.pushNamed('Noa_negotiateCopy');
+                                      context.pushNamed('Noa_negotiate');
                                     },
                                     child: Container(
                                       width: double.infinity,
@@ -1391,7 +1393,7 @@ class _DashboardWidgetState extends State<DashboardWidget> {
                                   style: FlutterFlowTheme.of(context)
                                       .bodyMedium
                                       .override(
-                                        fontFamily: 'Open Sans',
+                                        fontFamily: 'Noto Sans JP',
                                         letterSpacing: 0.0,
                                       ),
                                 ),
@@ -1444,7 +1446,7 @@ class _DashboardWidgetState extends State<DashboardWidget> {
                                   style: FlutterFlowTheme.of(context)
                                       .bodyMedium
                                       .override(
-                                        fontFamily: 'Open Sans',
+                                        fontFamily: 'Noto Sans JP',
                                         letterSpacing: 0.0,
                                       ),
                                 ),
@@ -1461,7 +1463,7 @@ class _DashboardWidgetState extends State<DashboardWidget> {
                   child: Text(
                     'View Agents',
                     style: FlutterFlowTheme.of(context).titleLarge.override(
-                          fontFamily: 'Inter Tight',
+                          fontFamily: 'Noto Sans JP',
                           letterSpacing: 0.0,
                         ),
                   ),
@@ -1517,7 +1519,7 @@ class _DashboardWidgetState extends State<DashboardWidget> {
                               style: FlutterFlowTheme.of(context)
                                   .bodyMedium
                                   .override(
-                                    fontFamily: 'Open Sans',
+                                    fontFamily: 'Noto Sans JP',
                                     letterSpacing: 0.0,
                                   ),
                             ),
@@ -1579,59 +1581,7 @@ class _DashboardWidgetState extends State<DashboardWidget> {
                               style: FlutterFlowTheme.of(context)
                                   .bodyMedium
                                   .override(
-                                    fontFamily: 'Open Sans',
-                                    letterSpacing: 0.0,
-                                  ),
-                            ),
-                          ],
-                        ),
-                      ),
-                      Expanded(
-                        child: Column(
-                          mainAxisSize: MainAxisSize.max,
-                          children: [
-                            Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
-                                  0.0, 0.0, 0.0, 12.0),
-                              child: Container(
-                                width: double.infinity,
-                                height: 64.0,
-                                decoration: BoxDecoration(
-                                  color: FlutterFlowTheme.of(context)
-                                      .secondaryBackground,
-                                  boxShadow: [
-                                    BoxShadow(
-                                      blurRadius: 3.0,
-                                      color: Color(0x33000000),
-                                      offset: Offset(
-                                        0.0,
-                                        1.0,
-                                      ),
-                                    )
-                                  ],
-                                  borderRadius: BorderRadius.circular(12.0),
-                                  border: Border.all(
-                                    color:
-                                        FlutterFlowTheme.of(context).alternate,
-                                    width: 1.0,
-                                  ),
-                                ),
-                                child: Padding(
-                                  padding: EdgeInsets.all(4.0),
-                                  child: Icon(
-                                    Icons.filter_tilt_shift_rounded,
-                                    color: FlutterFlowTheme.of(context).primary,
-                                    size: 32.0,
-                                  ),
-                                ),
-                              ),
-                            ),
-                            Text(
-                              '?',
-                              style: FlutterFlowTheme.of(context)
-                                  .bodyMedium
-                                  .override(
-                                    fontFamily: 'Open Sans',
+                                    fontFamily: 'Noto Sans JP',
                                     letterSpacing: 0.0,
                                   ),
                             ),
@@ -1646,7 +1596,7 @@ class _DashboardWidgetState extends State<DashboardWidget> {
                   child: Text(
                     'Settings',
                     style: FlutterFlowTheme.of(context).titleLarge.override(
-                          fontFamily: 'Inter Tight',
+                          fontFamily: 'Noto Sans JP',
                           letterSpacing: 0.0,
                         ),
                   ),
@@ -1703,7 +1653,7 @@ class _DashboardWidgetState extends State<DashboardWidget> {
                               style: FlutterFlowTheme.of(context)
                                   .bodyMedium
                                   .override(
-                                    fontFamily: 'Open Sans',
+                                    fontFamily: 'Noto Sans JP',
                                     letterSpacing: 0.0,
                                   ),
                             ),
@@ -1756,7 +1706,7 @@ class _DashboardWidgetState extends State<DashboardWidget> {
                               style: FlutterFlowTheme.of(context)
                                   .bodyMedium
                                   .override(
-                                    fontFamily: 'Open Sans',
+                                    fontFamily: 'Noto Sans JP',
                                     letterSpacing: 0.0,
                                   ),
                             ),
@@ -1809,7 +1759,7 @@ class _DashboardWidgetState extends State<DashboardWidget> {
                               style: FlutterFlowTheme.of(context)
                                   .bodyMedium
                                   .override(
-                                    fontFamily: 'Open Sans',
+                                    fontFamily: 'Noto Sans JP',
                                     letterSpacing: 0.0,
                                   ),
                             ),
@@ -1868,7 +1818,7 @@ class _DashboardWidgetState extends State<DashboardWidget> {
                                       style: FlutterFlowTheme.of(context)
                                           .titleLarge
                                           .override(
-                                            fontFamily: 'Inter Tight',
+                                            fontFamily: 'Noto Sans JP',
                                             letterSpacing: 0.0,
                                           ),
                                     ),
@@ -1877,7 +1827,7 @@ class _DashboardWidgetState extends State<DashboardWidget> {
                                       style: FlutterFlowTheme.of(context)
                                           .labelMedium
                                           .override(
-                                            fontFamily: 'Open Sans',
+                                            fontFamily: 'Noto Sans JP',
                                             letterSpacing: 0.0,
                                           ),
                                     ),
@@ -1903,7 +1853,7 @@ class _DashboardWidgetState extends State<DashboardWidget> {
                                 textStyle: FlutterFlowTheme.of(context)
                                     .bodyMedium
                                     .override(
-                                      fontFamily: 'Open Sans',
+                                      fontFamily: 'Noto Sans JP',
                                       color: FlutterFlowTheme.of(context)
                                           .primaryText,
                                       letterSpacing: 0.0,
@@ -1924,7 +1874,7 @@ class _DashboardWidgetState extends State<DashboardWidget> {
                                 textStyle: FlutterFlowTheme.of(context)
                                     .bodyMedium
                                     .override(
-                                      fontFamily: 'Open Sans',
+                                      fontFamily: 'Noto Sans JP',
                                       color: FlutterFlowTheme.of(context)
                                           .secondaryText,
                                       letterSpacing: 0.0,
@@ -2033,7 +1983,7 @@ class _DashboardWidgetState extends State<DashboardWidget> {
                                                         .bodyMedium
                                                         .override(
                                                           fontFamily:
-                                                              'Open Sans',
+                                                              'Noto Sans JP',
                                                           letterSpacing: 0.0,
                                                         ),
                                               ),
@@ -2047,7 +1997,8 @@ class _DashboardWidgetState extends State<DashboardWidget> {
                                                           context)
                                                       .labelMedium
                                                       .override(
-                                                        fontFamily: 'Open Sans',
+                                                        fontFamily:
+                                                            'Noto Sans JP',
                                                         letterSpacing: 0.0,
                                                       ),
                                                 ),
@@ -2062,10 +2013,10 @@ class _DashboardWidgetState extends State<DashboardWidget> {
                                         style: FlutterFlowTheme.of(context)
                                             .headlineSmall
                                             .override(
-                                              fontFamily: 'Inter Tight',
+                                              fontFamily: 'Noto Sans JP',
                                               color:
                                                   FlutterFlowTheme.of(context)
-                                                      .tertiary,
+                                                      .alternate,
                                               letterSpacing: 0.0,
                                             ),
                                       ),
@@ -2141,7 +2092,7 @@ class _DashboardWidgetState extends State<DashboardWidget> {
                                                         .bodyMedium
                                                         .override(
                                                           fontFamily:
-                                                              'Open Sans',
+                                                              'Noto Sans JP',
                                                           letterSpacing: 0.0,
                                                         ),
                                               ),
@@ -2155,7 +2106,8 @@ class _DashboardWidgetState extends State<DashboardWidget> {
                                                           context)
                                                       .labelMedium
                                                       .override(
-                                                        fontFamily: 'Open Sans',
+                                                        fontFamily:
+                                                            'Noto Sans JP',
                                                         letterSpacing: 0.0,
                                                       ),
                                                 ),
@@ -2170,10 +2122,10 @@ class _DashboardWidgetState extends State<DashboardWidget> {
                                         style: FlutterFlowTheme.of(context)
                                             .headlineSmall
                                             .override(
-                                              fontFamily: 'Inter Tight',
+                                              fontFamily: 'Noto Sans JP',
                                               color:
                                                   FlutterFlowTheme.of(context)
-                                                      .secondary,
+                                                      .tertiary,
                                               letterSpacing: 0.0,
                                             ),
                                       ),
@@ -2249,7 +2201,7 @@ class _DashboardWidgetState extends State<DashboardWidget> {
                                                         .bodyMedium
                                                         .override(
                                                           fontFamily:
-                                                              'Open Sans',
+                                                              'Noto Sans JP',
                                                           letterSpacing: 0.0,
                                                         ),
                                               ),
@@ -2263,7 +2215,8 @@ class _DashboardWidgetState extends State<DashboardWidget> {
                                                           context)
                                                       .labelMedium
                                                       .override(
-                                                        fontFamily: 'Open Sans',
+                                                        fontFamily:
+                                                            'Noto Sans JP',
                                                         letterSpacing: 0.0,
                                                       ),
                                                 ),
@@ -2278,10 +2231,10 @@ class _DashboardWidgetState extends State<DashboardWidget> {
                                         style: FlutterFlowTheme.of(context)
                                             .headlineSmall
                                             .override(
-                                              fontFamily: 'Inter Tight',
+                                              fontFamily: 'Noto Sans JP',
                                               color:
                                                   FlutterFlowTheme.of(context)
-                                                      .secondary,
+                                                      .tertiary,
                                               letterSpacing: 0.0,
                                             ),
                                       ),

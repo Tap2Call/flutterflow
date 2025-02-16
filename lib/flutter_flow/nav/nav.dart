@@ -77,18 +77,13 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
       refreshListenable: appStateNotifier,
       navigatorKey: appNavigatorKey,
       errorBuilder: (context, state) =>
-          appStateNotifier.loggedIn ? HomePageWidget() : LoginWidget(),
+          appStateNotifier.loggedIn ? DashboardWidget() : LoginWidget(),
       routes: [
         FFRoute(
           name: '_initialize',
           path: '/',
           builder: (context, _) =>
-              appStateNotifier.loggedIn ? HomePageWidget() : LoginWidget(),
-        ),
-        FFRoute(
-          name: 'HomePage',
-          path: '/homePage',
-          builder: (context, params) => HomePageWidget(),
+              appStateNotifier.loggedIn ? DashboardWidget() : LoginWidget(),
         ),
         FFRoute(
           name: 'Onboarding_welcome',
@@ -144,11 +139,6 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: 'Noa_negotiate',
           path: '/Noa_negotiate',
           builder: (context, params) => NoaNegotiateWidget(),
-        ),
-        FFRoute(
-          name: 'Noa_negotiateCopy',
-          path: '/Noa_negotiateCopy',
-          builder: (context, params) => NoaNegotiateCopyWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );
@@ -334,14 +324,8 @@ class FFRoute {
               : builder(context, ffParams);
           final child = appStateNotifier.loading
               ? Center(
-                  child: SizedBox(
-                    width: 50.0,
-                    height: 50.0,
-                    child: CircularProgressIndicator(
-                      valueColor: AlwaysStoppedAnimation<Color>(
-                        FlutterFlowTheme.of(context).primary,
-                      ),
-                    ),
+                  child: LinearProgressIndicator(
+                    color: FlutterFlowTheme.of(context).primary,
                   ),
                 )
               : page;

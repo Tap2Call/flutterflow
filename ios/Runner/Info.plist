@@ -53,8 +53,7 @@
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 
-	<key>NSMicrophoneUsageDescription</key>
-    <string>This app requires permissions to record audio.</string>
+
 
 
 

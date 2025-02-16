@@ -54,6 +54,12 @@ abstract class FlutterFlowTheme {
   late Color error;
   late Color info;
 
+  late Color darkPurple;
+  late Color lightPurple;
+  late Color coral;
+  late Color teal;
+  late Color green;
+
   @Deprecated('Use displaySmallFamily instead')
   String get title1Family => displaySmallFamily;
   @Deprecated('Use displaySmall instead')
@@ -125,10 +131,10 @@ class LightModeTheme extends FlutterFlowTheme {
   @Deprecated('Use tertiary instead')
   Color get tertiaryColor => tertiary;
 
-  late Color primary = const Color(0xFF4B39EF);
-  late Color secondary = const Color(0xFF39D2C0);
-  late Color tertiary = const Color(0xFFEE8B60);
-  late Color alternate = const Color(0xFFE0E3E7);
+  late Color primary = const Color(0xFF7E3CDE);
+  late Color secondary = const Color(0xFF58E0EA);
+  late Color tertiary = const Color(0xFFED474A);
+  late Color alternate = const Color(0xFFB6D094);
   late Color primaryText = const Color(0xFF14181B);
   late Color secondaryText = const Color(0xFF57636C);
   late Color primaryBackground = const Color(0xFFF1F4F8);
@@ -141,6 +147,12 @@ class LightModeTheme extends FlutterFlowTheme {
   late Color warning = const Color(0xFFF9CF58);
   late Color error = const Color(0xFFFF5963);
   late Color info = const Color(0xFFFFFFFF);
+
+  late Color darkPurple = Color(0xFF7E3CDE);
+  late Color lightPurple = Color(0xFFAA7DCE);
+  late Color coral = Color(0xFFED474A);
+  late Color teal = Color(0xFF58E0EA);
+  late Color green = Color(0xFFB6D094);
 }
 
 abstract class Typography {
@@ -181,107 +193,107 @@ class ThemeTypography extends Typography {
 
   final FlutterFlowTheme theme;
 
-  String get displayLargeFamily => 'Inter Tight';
+  String get displayLargeFamily => 'Noto Sans JP';
   TextStyle get displayLarge => GoogleFonts.getFont(
-        'Inter Tight',
+        'Noto Sans JP',
         color: theme.primaryText,
         fontWeight: FontWeight.w600,
         fontSize: 64.0,
       );
-  String get displayMediumFamily => 'Inter Tight';
+  String get displayMediumFamily => 'Noto Sans JP';
   TextStyle get displayMedium => GoogleFonts.getFont(
-        'Inter Tight',
+        'Noto Sans JP',
         color: theme.primaryText,
         fontWeight: FontWeight.w600,
         fontSize: 44.0,
       );
-  String get displaySmallFamily => 'Inter Tight';
+  String get displaySmallFamily => 'Noto Sans JP';
   TextStyle get displaySmall => GoogleFonts.getFont(
-        'Inter Tight',
+        'Noto Sans JP',
         color: theme.primaryText,
         fontWeight: FontWeight.w600,
         fontSize: 36.0,
       );
-  String get headlineLargeFamily => 'Inter Tight';
+  String get headlineLargeFamily => 'Noto Sans JP';
   TextStyle get headlineLarge => GoogleFonts.getFont(
-        'Inter Tight',
+        'Noto Sans JP',
         color: theme.primaryText,
         fontWeight: FontWeight.w600,
         fontSize: 32.0,
       );
-  String get headlineMediumFamily => 'Inter Tight';
+  String get headlineMediumFamily => 'Noto Sans JP';
   TextStyle get headlineMedium => GoogleFonts.getFont(
-        'Inter Tight',
+        'Noto Sans JP',
         color: theme.primaryText,
         fontWeight: FontWeight.w600,
         fontSize: 28.0,
       );
-  String get headlineSmallFamily => 'Inter Tight';
+  String get headlineSmallFamily => 'Noto Sans JP';
   TextStyle get headlineSmall => GoogleFonts.getFont(
-        'Inter Tight',
+        'Noto Sans JP',
         color: theme.primaryText,
         fontWeight: FontWeight.w600,
         fontSize: 24.0,
       );
-  String get titleLargeFamily => 'Inter Tight';
+  String get titleLargeFamily => 'Noto Sans JP';
   TextStyle get titleLarge => GoogleFonts.getFont(
-        'Inter Tight',
+        'Noto Sans JP',
         color: theme.primaryText,
         fontWeight: FontWeight.w600,
         fontSize: 20.0,
       );
-  String get titleMediumFamily => 'Inter Tight';
+  String get titleMediumFamily => 'Noto Sans JP';
   TextStyle get titleMedium => GoogleFonts.getFont(
-        'Inter Tight',
+        'Noto Sans JP',
         color: theme.primaryText,
         fontWeight: FontWeight.w600,
         fontSize: 18.0,
       );
-  String get titleSmallFamily => 'Inter Tight';
+  String get titleSmallFamily => 'Noto Sans JP';
   TextStyle get titleSmall => GoogleFonts.getFont(
-        'Inter Tight',
+        'Noto Sans JP',
         color: theme.primaryText,
         fontWeight: FontWeight.w600,
         fontSize: 16.0,
       );
-  String get labelLargeFamily => 'Open Sans';
+  String get labelLargeFamily => 'Noto Sans JP';
   TextStyle get labelLarge => GoogleFonts.getFont(
-        'Open Sans',
+        'Noto Sans JP',
         color: theme.secondaryText,
         fontWeight: FontWeight.normal,
         fontSize: 16.0,
       );
-  String get labelMediumFamily => 'Open Sans';
+  String get labelMediumFamily => 'Noto Sans JP';
   TextStyle get labelMedium => GoogleFonts.getFont(
-        'Open Sans',
+        'Noto Sans JP',
         color: theme.secondaryText,
         fontWeight: FontWeight.normal,
         fontSize: 14.0,
       );
-  String get labelSmallFamily => 'Open Sans';
+  String get labelSmallFamily => 'Noto Sans JP';
   TextStyle get labelSmall => GoogleFonts.getFont(
-        'Open Sans',
+        'Noto Sans JP',
         color: theme.secondaryText,
         fontWeight: FontWeight.normal,
         fontSize: 12.0,
       );
-  String get bodyLargeFamily => 'Open Sans';
+  String get bodyLargeFamily => 'Noto Sans JP';
   TextStyle get bodyLarge => GoogleFonts.getFont(
-        'Open Sans',
+        'Noto Sans JP',
         color: theme.primaryText,
         fontWeight: FontWeight.normal,
         fontSize: 16.0,
       );
-  String get bodyMediumFamily => 'Open Sans';
+  String get bodyMediumFamily => 'Noto Sans JP';
   TextStyle get bodyMedium => GoogleFonts.getFont(
-        'Open Sans',
+        'Noto Sans JP',
         color: theme.primaryText,
         fontWeight: FontWeight.normal,
         fontSize: 14.0,
       );
-  String get bodySmallFamily => 'Open Sans';
+  String get bodySmallFamily => 'Noto Sans JP';
   TextStyle get bodySmall => GoogleFonts.getFont(
-        'Open Sans',
+        'Noto Sans JP',
         color: theme.primaryText,
         fontWeight: FontWeight.normal,
         fontSize: 12.0,
@@ -312,6 +324,12 @@ class DarkModeTheme extends FlutterFlowTheme {
   late Color warning = const Color(0xFFF9CF58);
   late Color error = const Color(0xFFFF5963);
   late Color info = const Color(0xFFFFFFFF);
+
+  late Color darkPurple = Color(0xFF7E3CDE);
+  late Color lightPurple = Color(0xFFAA7DCE);
+  late Color coral = Color(0xFFED474A);
+  late Color teal = Color(0xFF58E0EA);
+  late Color green = Color(0xFFB6D094);
 }
 
 extension TextStyleHelper on TextStyle {
